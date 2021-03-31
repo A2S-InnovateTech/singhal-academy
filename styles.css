@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Actor&display=swap");
 
 body {
   margin: 0%;
@@ -90,4 +91,58 @@ nav {
   border: none;
   font-size: 20px;
   padding: 10px 20px;
+}
+.about-image {
+  background-image: url(images/Bokeh.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+}
+.about-image > h1 {
+  width: 80% !important;
+  color: #f8eaa9;
+  text-align: center;
+  font-family: "Luckiest Guy", cursive;
+  word-spacing: 0.5em;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1.1;
+  font-size: 100px;
+  padding-top: 10%;
+  margin: 0 auto 0 auto;
+}
+.about {
+  background-color: #f8eaa9;
+  text-align: center;
+}
+.about > h1 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: xx-large;
+  text-align: left;
+  font-weight: bold;
+  letter-spacing: 2px;
+  word-wrap: break-word;
+  line-height: 1.2em;
+}
+.about > p {
+  color: #2a2a2a;
+  font-size: large;
+  text-align: left;
+  font-family: "Actor", sans-serif;
+  letter-spacing: 1px;
+  font-weight: normal;
+  line-height: 1.5em;
+  word-wrap: break-word;
+  margin-bottom: 50px;
+}
+.about > button {
+  background-color: #1cadeb;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 0 auto 50px auto;
 }
