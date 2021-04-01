@@ -248,3 +248,64 @@ nav {
   left: 30%;
   transform: translate(-50%, -50%);
 }
+.syllabus-screen {
+  background-image: url(images/Wood.jpg);
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700vh;
+  width: 100%;
+}
+.syllabus-heading {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80% !important;
+  color: #8d2424;
+  text-align: center;
+  font-family: "Luckiest Guy", cursive;
+  word-spacing: 0.5em;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1.1;
+  font-size: 100px;
+}
+.syllabus-text {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #2a2a2a;
+  text-align: center;
+  font-style: italic;
+  font-family: "Bangers", cursive;
+  letter-spacing: 2px;
+  word-wrap: break-word;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 41px;
+  font-size: 42px;
+}
+.syllabus-container {
+  text-align: left !important;
+  position: absolute;
+  top: 370%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.syllabus-container > p {
+  color: #f8eaa9;
+  text-align: center;
+  font-style: italic;
+  font-family: "Bangers", cursive;
+  letter-spacing: 2px;
+  word-wrap: break-word;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 41px;
+  font-size: 42px;
+  margin: 5%;
+}
