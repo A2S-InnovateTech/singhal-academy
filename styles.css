@@ -292,7 +292,7 @@ nav {
 .syllabus-container {
   text-align: left !important;
   position: absolute;
-  top: 370%;
+  top: 390%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
