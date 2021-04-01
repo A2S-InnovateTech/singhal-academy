@@ -196,14 +196,55 @@ nav {
   word-wrap: break-word;
 }
 .course-text > ul {
-  list-style: none; /* Remove default bullets */
+  list-style: none;
 }
 
 .course-text > ul li::before {
-  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: #fff; /* Change the color */
-  font-weight: bold; /* If you want it to be bold */
-  display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 1em; /* Also needed for space (tweak if needed) */
-  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  content: "\2022";
+  color: #fff;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.assignment-screen {
+  background-image: url(images/378537037.jpg);
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.assignment-heading {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80% !important;
+  color: #2a2a2a;
+  text-align: center;
+  font-family: "Luckiest Guy", cursive;
+  word-spacing: 0.5em;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1.1;
+  font-size: 100px;
+}
+.assignment-link > a {
+  font-size: xx-large;
+  color: rgb(141, 80, 36);
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 41px;
+  font-family: "Bangers";
+  letter-spacing: 2px;
+  word-wrap: break-word;
+}
+.assignment-link {
+  position: absolute;
+  top: 55%;
+  left: 30%;
+  transform: translate(-50%, -50%);
 }
