@@ -54,16 +54,30 @@ document.querySelectorAll(".opt")[3].addEventListener("click", function () {
 //     document.getElementById("btn").classList.add("btn-success");
 //   }
 // });
-$("#btn").on("click", function () {
-  if ($("#btn").text() === "Go Online") {
-    $("#btn").text("Go Offline");
-    $("#btn").removeClass("btn-success");
-    $("#btn").addClass("btn-danger");
-    $("#price").text("500/-");
-  } else if ($("#btn").text() === "Go Offline") {
-    $("#btn").text("Go Online");
-    $("#btn").removeClass("btn-danger");
-    $("#btn").addClass("btn-success");
-    $("#price").text("1,000/-");
-  }
+// $("#btn").on("click", function () {
+//   if ($("#btn").text() === "Go Online") {
+//     $("#btn").text("Go Offline");
+//     $("#btn").removeClass("btn-success");
+//     $("#btn").addClass("btn-danger");
+//     $("#price").text("500/-");
+//   } else if ($("#btn").text() === "Go Offline") {
+//     $("#btn").text("Go Online");
+//     $("#btn").removeClass("btn-danger");
+//     $("#btn").addClass("btn-success");
+//     $("#price").text("1,000/-");
+//   }
+// });
+
+$(".price-period").each(function (i) {
+  var classes = $(this).attr("class"),
+    id = $(this).attr("id"),
+    name = $(this).attr("name");
+
+  $(this).wrap('<div class="input-price-period" id="' + name + '"></div>');
+  $(this).after('<label for="price-period-' + i + '"></label>');
+  $(this).attr("id", "price-period-" + i);
+  $(this).attr("name", name);
+});
+$(".input-price-period input").change(function () {
+  $(".card-pricing-toggle").toggleClass("card-price--annual");
 });
