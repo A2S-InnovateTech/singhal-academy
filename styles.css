@@ -409,3 +409,112 @@ form {
   letter-spacing: 2px;
   word-wrap: break-word;
 }
+
+.comment-image {
+  background-image: url(images/comments-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  width: 100%;
+}
+.comment-image > h1 {
+  width: 80% !important;
+  color: #2a2a2a;
+  text-align: center;
+  font-family: "Luckiest Guy", cursive;
+  word-spacing: 0.5em;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1.1;
+  font-size: 100px;
+  padding-top: 5%;
+  margin: 0 auto 0 auto;
+}
+.comment-image > p {
+  width: 80% !important;
+  color: #fff;
+  text-align: center;
+  font-family: "Bangers";
+  word-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1.1;
+  font-size: 39px;
+  letter-spacing: 2px;
+  margin: 0 auto 0 auto;
+}
+.comment {
+  background-color: #ffffff;
+  text-align: center;
+  margin-bottom: 8%;
+}
+.contact-heading {
+  margin-top: 50px;
+  color: rgb(194, 59, 59);
+  margin-bottom: 30px;
+  font-size: 35px;
+  font-family: "Actor";
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  word-wrap: break-word;
+  line-height: 1.5em;
+}
+.contact > p {
+  color: rgb(141, 80, 36);
+  font-size: 22px;
+  text-align: center;
+  font-family: "Actor", sans-serif;
+  letter-spacing: 1px;
+  font-weight: bold;
+  line-height: 1.5em;
+  word-wrap: break-word;
+  margin-bottom: 50px;
+}
+.comment > span {
+  color: #1cadeb;
+}
+.about > button {
+  background-color: #1cadeb;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 0 auto 50px auto;
+}
+label > span {
+  color: red;
+}
+form {
+  text-align: left;
+}
+.contact-side-heading {
+  color: #2a2a2a;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Actor";
+  font-size: 56px;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+  margin: auto auto;
+}
+.contact-mail {
+  color: rgb(141, 36, 36);
+  font-weight: normal;
+  text-align: center;
+  font-family: "Actor";
+  font-size: 26px;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+  margin: auto auto;
+}
+.address {
+  text-decoration: underline;
+  font-style: italic;
+  text-align: center;
+  font-family: "Capture it";
+  font-weight: bold;
+  letter-spacing: 2px;
+  word-wrap: break-word;
+}
