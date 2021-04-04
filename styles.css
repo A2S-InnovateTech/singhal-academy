@@ -28,33 +28,24 @@ nav {
 }
 .home-screen {
   background-image: url(images/background-image.jpg);
-  min-height: 500px;
-  background-attachment: fixed;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: auto;
+  text-align: center;
   width: 100%;
 }
-.home-text {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.home-quote {
   padding-top: 50px;
   margin: 0 auto 0 auto;
 }
-.home-text > p {
-  width: 100%;
+.home-quote > p {
+  margin: 10px auto;
+  width: 80%;
   font-size: 2rem;
   font-weight: 600;
   color: #5e4db1;
 }
-.main-heading {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.home-heading {
   width: 80% !important;
   color: rgb(172, 172, 185);
   text-align: center;
@@ -64,12 +55,9 @@ nav {
   font-weight: normal;
   line-height: 1.1;
   font-size: 100px;
+  margin: 50px auto;
 }
-.main-text {
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.home-text {
   color: #c7e31c;
   text-align: center;
   font-family: "Bangers", cursive;
@@ -79,18 +67,16 @@ nav {
   font-weight: normal;
   line-height: 41px;
   font-size: 40px;
+  margin: 20px auto 20px auto;
 }
 .join-btn {
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   background-color: #1cadeb;
   border-radius: 5px;
   color: #fff;
   border: none;
   font-size: 20px;
   padding: 10px 20px;
+  margin: 50px auto;
 }
 .about-image {
   background-image: url(images/Bokeh.jpg);
@@ -149,20 +135,13 @@ nav {
 }
 .course-screen {
   background-image: url("images/1604029702.jpg");
-  height: 230vh;
-  background-attachment: fixed;
-  background-position: center;
+  height: auto;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.course-text {
-  position: absolute;
-  z-index: 1000;
-  top: 200px;
-  left: 300px;
-}
+
 .course-text > h1 {
-  font-size: xxx-large;
+  font-size: 55px;
   color: #8d5024;
   text-align: left;
   text-transform: uppercase;
@@ -171,6 +150,7 @@ nav {
   line-height: 41px;
   letter-spacing: 2px;
   word-wrap: break-word;
+  padding-top: 50px;
   margin-bottom: 50px;
 }
 .course-text > p {
@@ -183,7 +163,8 @@ nav {
   font-family: "Bangers";
   letter-spacing: 2px;
   word-wrap: break-word;
-  margin: 30px auto;
+  margin: 30px auto 0 auto;
+  padding: 15px;
 }
 .course-text > ul > li {
   font-size: xx-large;
@@ -210,18 +191,12 @@ nav {
 .assignment-screen {
   background-image: url(images/378537037.jpg);
   min-height: 500px;
-  background-attachment: fixed;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: auto;
   width: 100%;
 }
 .assignment-heading {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 80% !important;
   color: #2a2a2a;
   text-align: center;
@@ -231,6 +206,10 @@ nav {
   font-weight: normal;
   line-height: 1.1;
   font-size: 100px;
+  padding-top: 7%;
+  padding-bottom: 3%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .assignment-link > a {
   font-size: xx-large;
@@ -242,27 +221,15 @@ nav {
   letter-spacing: 2px;
   word-wrap: break-word;
 }
-.assignment-link {
-  position: absolute;
-  top: 55%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-}
+
 .syllabus-screen {
   background-image: url(images/Wood.jpg);
-  min-height: 500px;
-  background-attachment: fixed;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 700vh;
+  height: auto;
   width: 100%;
 }
 .syllabus-heading {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 80% !important;
   color: #8d2424;
   text-align: center;
@@ -272,12 +239,10 @@ nav {
   font-weight: normal;
   line-height: 1.1;
   font-size: 100px;
+  margin: 0px auto 50px auto;
+  padding-top: 50px;
 }
 .syllabus-text {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: #2a2a2a;
   text-align: center;
   font-style: italic;
@@ -289,16 +254,10 @@ nav {
   line-height: 41px;
   font-size: 42px;
 }
-.syllabus-container {
-  text-align: left !important;
-  position: absolute;
-  top: 390%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.syllabus-container > p {
+
+.syllabus-class {
   color: #f8eaa9;
-  text-align: center;
+  text-align: left;
   font-style: italic;
   font-family: "Bangers", cursive;
   letter-spacing: 2px;
@@ -308,4 +267,53 @@ nav {
   line-height: 41px;
   font-size: 42px;
   margin: 5%;
+}
+.result-screen {
+  text-align: center;
+  background-image: url(images/result.jpg);
+  background-size: cover;
+  height: auto;
+}
+.result-heading {
+  text-decoration: underline;
+  color: #8d5024;
+  text-align: center;
+  font-family: "Luckiest Guy", cursive;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1.1;
+  font-size: 100px;
+  padding-bottom: 50px;
+  padding-top: 10%;
+}
+.result-screen > div > p {
+  color: rgb(76, 68, 68);
+  font-weight: bold;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 45px;
+  line-height: 41px;
+  font-family: "Bangers";
+  letter-spacing: 2px;
+  word-wrap: break-word;
+  margin: 30px auto 0 auto;
+}
+.result-list {
+  text-align: left;
+  padding-bottom: 50px;
+}
+.data {
+  color: rgb(255, 146, 27);
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 41px;
+  font-family: "Bangers";
+  letter-spacing: 2px;
+  word-wrap: break-word;
+  padding: 10px;
+}
+table {
+  margin-left: 50px;
+  margin-top: 30px;
 }
