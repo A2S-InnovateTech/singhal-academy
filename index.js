@@ -90,5 +90,8 @@ document.getElementById("getCode").addEventListener("click", () => {
     document.querySelectorAll(".card-price")[1].innerHTML = "3000";
     console.log(price);
     console.log("Success");
+  } else {
+    document.querySelectorAll(".card-price")[0].innerHTML = "Wrong Code!!!";
+    document.querySelectorAll(".card-price")[1].innerHTML = "Wrong Code!!!";
   }
 });
