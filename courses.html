@@ -97,7 +97,7 @@
                     class="card card-pricing card-pricing-toggle border-light box-shadow-md"
                   >
                     <div class="card-body">
-                      <div class="card-price-total">
+                      <div id="card-price-total" class="card-price-total">
                         <h6 class="card-price text-center">4000</h6>
                         <h6 class="card-price text-center">3500</h6>
                       </div>
@@ -119,6 +119,21 @@
                         voluptatibus modi dicta? Sequi sunt voluptates placeat
                         vel ipsum.
                       </p>
+                      <div class="form-group input-group">
+                        <input
+                          id="code"
+                          class="form-control"
+                          type="text"
+                          placeholder="Add Coupon Code"
+                          value=""
+                        />
+                        <div class="input-group-append">
+                          <button id="getCode" class="btn btn-dark">
+                            Get Discount
+                          </button>
+                        </div>
+                      </div>
+                      <p id="print"></p>
 
                       <a href="#" class="btn btn-block btn-primary"
                         >ENROLL NOW</a

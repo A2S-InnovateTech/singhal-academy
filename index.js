@@ -72,7 +72,6 @@ $(".price-period").each(function (i) {
   var classes = $(this).attr("class"),
     id = $(this).attr("id"),
     name = $(this).attr("name");
-
   $(this).wrap('<div class="input-price-period" id="' + name + '"></div>');
   $(this).after('<label for="price-period-' + i + '"></label>');
   $(this).attr("id", "price-period-" + i);
@@ -80,4 +79,16 @@ $(".price-period").each(function (i) {
 });
 $(".input-price-period input").change(function () {
   $(".card-pricing-toggle").toggleClass("card-price--annual");
+});
+
+document.getElementById("getCode").addEventListener("click", () => {
+  var x = document.getElementById("code").value;
+  console.log(x);
+  if (x === "Tarun2021") {
+    var price = document.getElementById("card-price-total").textContent;
+    document.querySelectorAll(".card-price")[0].innerHTML = "3500";
+    document.querySelectorAll(".card-price")[1].innerHTML = "3000";
+    console.log(price);
+    console.log("Success");
+  }
 });
