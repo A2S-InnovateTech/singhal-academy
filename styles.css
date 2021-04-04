@@ -134,7 +134,9 @@ nav {
   margin: 0 auto 50px auto;
 }
 .course-screen {
-  background-image: url("images/imageedit_1_8527365081.png");
+  background-color: #fff;
+  /* background-color: #cae3ee; */
+  /* background-image: url("images/imageedit_1_8527365081.png"); */
   height: auto;
   background-repeat: no-repeat;
   background-size: cover;
@@ -227,7 +229,7 @@ nav {
   outline: none;
   border: 10px solid #614107;
   font-size: 2.4rem;
-  font-family: "Arvo", cursive;
+  font-family: "Bangers";
   line-height: 1.5;
   font-weight: 900;
   color: #4d6105;
@@ -639,12 +641,12 @@ form {
 }
 
 .card-price-toggle span.annually {
-  opacity: 1;
+  opacity: 0.35;
   position: relative;
 }
 
 .card-pricing-toggle.card-price--annual .card-price-toggle span.monthly {
-  opacity: 1;
+  opacity: 0.35;
 }
 
 .card-pricing-toggle.card-price--annual .card-price-toggle span.annually {
@@ -667,7 +669,7 @@ form {
 
 .card-price-toggle .input-price-period input:checked + label:after {
   left: 41px;
-  background: #e0ecf1;
+  background: #52c5f7;
 }
 
 .card-price-toggle .input-price-period label {
@@ -676,7 +678,7 @@ form {
   width: 66px;
   height: 26px;
   border-radius: 50px;
-  background: #a8a6a6;
+  background: #ffffff;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
   margin-bottom: 0;
@@ -691,12 +693,588 @@ form {
   top: 3px;
   left: 5px;
   border-radius: 50%;
-  background: #e3f1f7;
+  background: #52c5f7;
   pointer-events: none;
   transition: all 0.4s ease-in-out;
 }
-.card-price-toggle {
-  position: absolute;
-  top: 50px;
-  right: 50px;
+
+@media (min-width: 300px) and (max-width: 580px) {
+  body {
+    margin: 0%;
+  }
+  nav {
+    padding: 0% !important;
+  }
+  .navbar-brand-logo {
+    width: 63px;
+    padding-left: 10px;
+  }
+  .nav-link {
+    color: #fff;
+    font-size: 1em;
+    padding: 10px 20px !important;
+    text-decoration: none;
+    -webkit-transition: background 1s;
+    transition: background 1s;
+  }
+  .nav-link:active {
+    background: #1cadeb;
+  }
+  .nav-link:hover {
+    color: #fff;
+    background: #1cadeb;
+  }
+  .home-screen {
+    background-image: url(images/background-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    text-align: center;
+    width: 100%;
+  }
+  .home-quote {
+    padding-top: 50px;
+    margin: 0 auto 0 auto;
+  }
+  .home-quote > p {
+    margin: 10px auto;
+    width: 80%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #5e4db1;
+  }
+  .home-heading {
+    width: 80% !important;
+    color: rgb(172, 172, 185);
+    text-align: center;
+    font-family: "Luckiest Guy", cursive;
+    word-spacing: 0.5em;
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 1;
+    font-size: 60px;
+    margin: 50px auto;
+  }
+  .home-text {
+    color: #c7e31c;
+    text-align: center;
+    font-family: "Bangers", cursive;
+    letter-spacing: 2px;
+    word-wrap: break-word;
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 41px;
+    font-size: 35px;
+    margin: 10px auto 10px auto;
+  }
+  .join-btn {
+    background-color: #1cadeb;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 30px auto;
+  }
+  .about-image {
+    background-image: url(images/Bokeh.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+  }
+  .about-image > h1 {
+    width: 80% !important;
+    color: #f8eaa9;
+    text-align: center;
+    font-family: "Luckiest Guy", cursive;
+    word-spacing: 0.5em;
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 1.1;
+    font-size: 70px;
+    padding-top: 10%;
+    margin: 0 auto 0 auto;
+  }
+  .about {
+    background-color: #f8eaa9;
+    text-align: center;
+  }
+  .about > h1 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: xx-large;
+    font-family: "Bangers";
+    text-align: left;
+    font-weight: bold;
+    letter-spacing: 2px;
+    word-wrap: break-word;
+    line-height: 1.2em;
+    padding: 10px;
+  }
+  .about > p {
+    color: #2a2a2a;
+    font-size: large;
+    text-align: left;
+    font-family: "Actor", sans-serif;
+    letter-spacing: 1px;
+    font-weight: normal;
+    line-height: 1.5em;
+    word-wrap: break-word;
+    margin-bottom: 50px;
+  }
+  .about > button {
+    background-color: #1cadeb;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 0 auto 30px auto;
+  }
+  .course-screen {
+    background-color: #fff;
+    /* background-color: #cae3ee; */
+    /* background-image: url("images/imageedit_1_8527365081.png"); */
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .course-text > h1 {
+    font-size: 55px;
+    color: #8d5024;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-family: "Bangers";
+    line-height: 41px;
+    letter-spacing: 2px;
+    word-wrap: break-word;
+    padding-top: 50px;
+    margin-bottom: 50px;
+  }
+  .course-text > p {
+    color: rgb(1, 1, 24);
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 39px;
+    line-height: 41px;
+    font-family: "Bangers";
+    letter-spacing: 2px;
+    word-wrap: break-word;
+    margin: 30px auto 0 auto;
+    padding: 15px;
+  }
+  .course-text > ul > li {
+    font-size: xx-large;
+    color: rgb(80, 141, 36);
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 41px;
+    font-family: "Bangers";
+    letter-spacing: 2px;
+    word-wrap: break-word;
+  }
+  .course-text > ul {
+    list-style: none;
+  }
+
+  .course-text > ul li::before {
+    content: "\2022";
+    color: #fff;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  .card-header {
+    text-align: center;
+    background-color: #4a88e6;
+    font-size: xx-large;
+    color: rgb(232, 243, 224);
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 41px;
+    font-family: "Bangers";
+    letter-spacing: 2px;
+    word-wrap: break-word;
+  }
+  .card-body {
+    background-color: #b4ddf8;
+  }
+  .btn-primary {
+    background-color: rgb(
+      230,
+      155,
+      70
+    ); /* For browsers that do not support gradients */
+    background-image: linear-gradient(
+      to right,
+      rgb(231, 144, 73),
+      rgb(73, 73, 11)
+    );
+  }
+  .btn-dark {
+    background-color: rgb(230, 155, 70);
+    background-image: linear-gradient(
+      to right,
+      rgb(73, 73, 11),
+      rgb(231, 144, 73)
+    );
+  }
+  .opt {
+    outline: none;
+    border: 10px solid #614107;
+    font-size: 2.4rem;
+    font-family: "Bangers";
+    line-height: 1.5;
+    font-weight: 900;
+    color: #4d6105;
+    text-shadow: 3px 0 #dbedf3;
+    border-radius: 15px;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 10px;
+    background-color: white;
+  }
+  .option {
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 10%; */
+  }
+  .card {
+    margin: 10px;
+  }
+
+  .assignment-screen {
+    background-image: url(images/378537037.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+  }
+  .assignment-heading {
+    width: 80% !important;
+    color: #2a2a2a;
+    text-align: center;
+    font-family: "Luckiest Guy", cursive;
+    word-spacing: 0.5em;
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 1.1;
+    font-size: 35px;
+    padding-top: 7%;
+    padding-bottom: 3%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .assignment-link > a {
+    font-size: xx-large;
+    color: rgb(141, 80, 36);
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 41px;
+    font-family: "Bangers";
+    letter-spacing: 2px;
+    word-wrap: break-word;
+  }
+
+  .syllabus-screen {
+    background-image: url(images/Wood.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+  }
+  .syllabus-heading {
+    width: 80% !important;
+    color: #8d2424;
+    text-align: center;
+    font-family: "Luckiest Guy", cursive;
+    word-spacing: 0.5em;
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 1.1;
+    font-size: 55px;
+    margin: 0px auto 50px auto;
+    padding-top: 50px;
+  }
+  .syllabus-text {
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+    font-family: "Bangers", cursive;
+    letter-spacing: 2px;
+    word-wrap: break-word;
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 41px;
+    font-size: 28px;
+  }
+
+  .syllabus-class {
+    color: #f8eaa9;
+    text-align: left;
+    font-style: italic;
+    font-family: "Bangers", cursive;
+    letter-spacing: 2px;
+    word-wrap: break-word;
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 41px;
+    font-size: 32px;
+    margin: 5%;
+  }
+  .result-screen {
+    text-align: center;
+    background-image: url(images/result.jpg);
+    background-size: cover;
+    height: auto;
+  }
+  .result-heading {
+    text-decoration: underline;
+    color: #8d5024;
+    text-align: center;
+    font-family: "Luckiest Guy", cursive;
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 1.1;
+    font-size: 40px;
+    padding-bottom: 30px;
+    padding-top: 10%;
+  }
+  .result-screen > div > p {
+    color: rgb(76, 68, 68);
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 35px;
+    line-height: 41px;
+    font-family: "Bangers";
+    letter-spacing: 2px;
+    word-wrap: break-word;
+    margin: 30px auto 0 auto;
+  }
+  .result-list {
+    text-align: left;
+    padding-bottom: 30px;
+  }
+  .data {
+    color: rgb(255, 146, 27);
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 41px;
+    font-family: "Bangers";
+    letter-spacing: 2px;
+    word-wrap: break-word;
+    padding: 10px;
+  }
+  table {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
+  .contact-image {
+    background-image: url(images/Triangle-Pattern.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+  }
+  .contact-image > h1 {
+    width: 80% !important;
+    color: #f8eaa9;
+    text-align: center;
+    font-family: "Luckiest Guy", cursive;
+    word-spacing: 0.5em;
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 1.1;
+    font-size: 60px;
+    padding-top: 10%;
+    margin: 0 auto 0 auto;
+  }
+  .contact {
+    background-color: #ffffff;
+    text-align: center;
+  }
+  .contact-heading {
+    margin-top: 50px;
+    color: rgb(194, 59, 59);
+    margin-bottom: 10px !important;
+    font-size: 20px !important;
+    font-family: "Actor";
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    word-wrap: break-word;
+    line-height: 1em;
+  }
+  .contact > p {
+    color: rgb(141, 80, 36);
+    font-size: 26px !important;
+    text-align: center;
+    font-family: "Actor", sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+    line-height: 1.5em;
+    word-wrap: break-word;
+    margin-bottom: 50px;
+  }
+  .about > button {
+    background-color: #1cadeb;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 0 auto 50px auto;
+  }
+  label > span {
+    color: red;
+  }
+  form {
+    text-align: left;
+  }
+  .contact-side-heading {
+    color: #2a2a2a;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Actor";
+    font-size: 35px !important;
+    letter-spacing: 1px;
+    line-height: 1em;
+    margin: auto auto;
+  }
+  .contact-mail {
+    color: rgb(141, 36, 36);
+    font-weight: normal;
+    text-align: center;
+    font-family: "Actor";
+    font-size: 20px !important;
+    margin: auto auto 20px auto !important;
+  }
+  .address {
+    text-decoration: underline;
+    font-style: italic;
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    letter-spacing: 2px;
+    word-wrap: break-word;
+  }
+
+  .comment-image {
+    background-image: url(images/comments-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+  }
+  .comment-image > h1 {
+    width: 80% !important;
+    color: #2a2a2a;
+    text-align: center;
+    font-family: "Luckiest Guy", cursive;
+    word-spacing: 0.5em;
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 1.1;
+    font-size: 45px;
+    padding-top: 5%;
+    margin: 0 auto 0 auto;
+  }
+  .comment-image > p {
+    width: 80% !important;
+    color: #fff;
+    text-align: center;
+    font-family: "Bangers";
+    word-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 1.1;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin: 0 auto 0 auto;
+  }
+  .comment {
+    background-color: #ffffff;
+    text-align: center;
+    margin-bottom: 8%;
+  }
+  .contact-heading {
+    margin-top: 50px;
+    color: rgb(194, 59, 59);
+    margin-bottom: 30px;
+    font-size: 35px;
+    font-family: "Actor";
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    word-wrap: break-word;
+    line-height: 1.5em;
+  }
+  .contact > p {
+    color: rgb(141, 80, 36);
+    font-size: 22px;
+    text-align: center;
+    font-family: "Actor", sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+    line-height: 1.5em;
+    word-wrap: break-word;
+    margin-bottom: 50px;
+  }
+  .comment > span {
+    color: #1cadeb;
+  }
+  .about > button {
+    background-color: #1cadeb;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 0 auto 50px auto;
+  }
+  label > span {
+    color: red;
+  }
+  form {
+    text-align: left;
+  }
+  .contact-side-heading {
+    color: #2a2a2a;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Actor";
+    font-size: 56px;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    margin: auto auto;
+  }
+  .contact-mail {
+    color: rgb(141, 36, 36);
+    font-weight: normal;
+    text-align: center;
+    font-family: "Actor";
+    font-size: 26px;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    margin: auto auto;
+  }
+  .address {
+    text-decoration: underline;
+    font-style: italic;
+    text-align: center;
+    font-family: "Capture it";
+    font-weight: bold;
+    letter-spacing: 2px;
+    word-wrap: break-word;
+  }
 }
