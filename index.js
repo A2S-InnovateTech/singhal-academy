@@ -88,10 +88,15 @@ document.getElementById("getCode").addEventListener("click", () => {
     var price = document.getElementById("card-price-total").textContent;
     document.querySelectorAll(".card-price")[0].innerHTML = "3500";
     document.querySelectorAll(".card-price")[1].innerHTML = "3000";
-    console.log(price);
+    document.getElementById("success-message").innerHTML =
+      "Coupon code applied successfully.";
+    document.getElementById("message").innerHTML =
+      "Coupon discount: ₹500 Discounted total: ₹3500";
     console.log("Success");
   } else {
-    document.querySelectorAll(".card-price")[0].innerHTML = "Wrong Code!!!";
-    document.querySelectorAll(".card-price")[1].innerHTML = "Wrong Code!!!";
+    document.querySelectorAll(".card-price")[0].innerHTML = "4000";
+    document.querySelectorAll(".card-price")[1].innerHTML = "3500";
+    document.getElementById("message").innerHTML = "Invalid Coupon Code!!!";
+    document.getElementById("success-message").innerHTML = "";
   }
 });
