@@ -188,6 +188,73 @@ nav {
   width: 1em;
   margin-left: -1em;
 }
+.card-header {
+  text-align: center;
+  background-color: #8d5024;
+  font-size: xx-large;
+  color: rgb(232, 243, 224);
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 41px;
+  font-family: "Bangers";
+  letter-spacing: 2px;
+  word-wrap: break-word;
+}
+.card-body {
+  background-color: #ecc1a1;
+}
+.btn-primary {
+  background-color: rgb(
+    230,
+    155,
+    70
+  ); /* For browsers that do not support gradients */
+  background-image: linear-gradient(
+    to right,
+    rgb(231, 144, 73),
+    rgb(73, 73, 11)
+  );
+}
+.btn-dark {
+  background-color: rgb(230, 155, 70);
+  background-image: linear-gradient(
+    to right,
+    rgb(73, 73, 11),
+    rgb(231, 144, 73)
+  );
+}
+.opt {
+  outline: none;
+  border: 10px solid #614107;
+  font-size: 2.4rem;
+  font-family: "Arvo", cursive;
+  line-height: 1.5;
+  font-weight: 900;
+  color: #4d6105;
+  text-shadow: 3px 0 #dbedf3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+}
+.option {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10%;
+}
+.card {
+  margin: 10px;
+}
+.btn-success,
+.btn-danger {
+  margin-top: -10%;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
 .assignment-screen {
   background-image: url(images/378537037.jpg);
   min-height: 500px;
