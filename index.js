@@ -94,9 +94,52 @@ document.getElementById("getCode").addEventListener("click", () => {
       "Coupon discount: ₹500 Discounted total: ₹3500";
     console.log("Success");
   } else {
-    document.querySelectorAll(".card-price")[0].innerHTML = "4000";
-    document.querySelectorAll(".card-price")[1].innerHTML = "3500";
-    document.getElementById("message").innerHTML = "Invalid Coupon Code!!!";
-    document.getElementById("success-message").innerHTML = "";
+    if (x === "") {
+      document.getElementById("message").innerHTML = "Please Enter Code!!!";
+    } else {
+      document.querySelectorAll(".card-price")[0].innerHTML = "4000";
+      document.querySelectorAll(".card-price")[1].innerHTML = "3500";
+      document.getElementById("message").innerHTML = "Invalid Coupon Code!!!";
+      document.getElementById("success-message").innerHTML = "";
+    }
   }
 });
+
+function doGet(e) {
+  // Change Spread Sheet url
+  var ss = SpreadsheetApp.openByUrl(
+    "https://docs.google.com/spreadsheets/d/1M9RLvN-t6ToGxjUKdjxsHuJilY-vZomXF7SB1NxnOcg/edit#gid=0"
+  );
+
+  // Sheet Name, Chnage Sheet1 to Users in Spread Sheet. Or any other name as you wish
+  var sheet = ss.getSheetByName("Codes");
+
+  return getUsers(sheet);
+}
+
+function getUsers(sheet) {
+  var jo = {};
+  var dataArray = [];
+
+  // collecting data from 2nd Row , 1st column to last row and last column
+  var rows = sheet
+    .getRange(2, 1, sheet.getLastRow() - 1, sheet.getLastColumn())
+    .getValues();
+
+  for (var i = 0, l = rows.length; i < l; i++) {
+    var dataRow = rows[i];
+    var record = {};
+    record["code"] = dataRow[0];
+    record["coaching"] = dataRow[1];
+
+    dataArray.push(record);
+  }
+
+  jo.user = dataArray;
+
+  var result = JSON.stringify(jo);
+
+  return ContentService.createTextOutput(result).setMimeType(
+    ContentService.MimeType.JSON
+  );
+}

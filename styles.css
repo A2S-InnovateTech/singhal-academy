@@ -20,11 +20,23 @@ nav {
   transition: background 1s;
 }
 .nav-link:active {
-  background: #1cadeb;
+  background: #3a3c3d;
 }
 .nav-link:hover {
   color: #fff;
-  background: #1cadeb;
+  background: #3a3c3d;
+}
+.banner-fadeBottom {
+  position: absolute;
+  top: 10%;
+  z-index: 2;
+  height: 7.4rem !important;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.61),
+    #111
+  );
 }
 .home-screen {
   background-image: url(images/background-image.jpg);
@@ -134,8 +146,8 @@ nav {
   margin: 0 auto 50px auto;
 }
 .course-screen {
-  background-color: #fff;
-  /* background-color: #cae3ee; */
+  /* background-color: #fff; */
+  background-color: #cae3ee;
   /* background-image: url("images/imageedit_1_8527365081.png"); */
   height: auto;
   background-repeat: no-repeat;
@@ -145,7 +157,7 @@ nav {
 .course-text > h1 {
   font-size: 55px;
   color: #8d5024;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
   font-weight: normal;
   font-family: "Bangers";
@@ -205,47 +217,72 @@ nav {
 .card-body {
   background-color: #b4ddf8;
 }
-.btn-primary {
-  background-color: rgb(
-    230,
-    155,
-    70
-  ); /* For browsers that do not support gradients */
-  background-image: linear-gradient(
-    to right,
-    rgb(231, 144, 73),
-    rgb(73, 73, 11)
-  );
-}
-.btn-dark {
-  background-color: rgb(230, 155, 70);
-  background-image: linear-gradient(
-    to right,
-    rgb(73, 73, 11),
-    rgb(231, 144, 73)
-  );
-}
+
 .opt {
-  outline: none;
-  border: 10px solid #614107;
-  font-size: 2.4rem;
-  font-family: "Bangers";
-  line-height: 1.5;
+  /* outline: none; */
+  /* border: 10px solid #614107; */
+  /* font-size: 1.5rem;
+  line-height: 1;
   font-weight: 900;
-  color: #4d6105;
-  text-shadow: 3px 0 #dbedf3;
-  border-radius: 15px;
+  color: #000; */
+  /* text-shadow: 3px 0 #dbedf3; */
+  /* border-radius: 10px;
   display: inline-block;
-  width: 200px;
-  height: 200px;
+  width: 80%;
+  height: 50px;
   text-align: center;
   margin: 10px;
-  background-color: white;
+  background-image: linear-gradient(to right, #f0c27b, #4b1248); */
 }
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+ul li {
+  box-sizing: border-box;
+  width: 15em;
+  height: 3em;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 0.5em;
+  margin: 0.5em;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+  color: white;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  line-height: 3em;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+ul li:nth-child(odd) {
+  background: linear-gradient(to right, rgb(247, 72, 72), rgb(82, 49, 43));
+  text-align: left;
+  padding-left: 10%;
+  transform: perspective(500px) rotateY(45deg);
+}
+
+ul li:nth-child(even) {
+  background: linear-gradient(to left, rgb(247, 72, 72), rgb(82, 49, 43));
+  text-align: right;
+  padding-right: 10%;
+  transform: perspective(500px) rotateY(-45deg);
+}
+
+ul li:nth-child(odd):hover {
+  transform: perspective(200px) rotateY(45deg);
+  padding-left: 5%;
+}
+
+ul li:nth-child(even):hover {
+  transform: perspective(200px) rotateY(-45deg);
+  padding-right: 5%;
+}
+
 .option {
   display: flex;
   justify-content: center;
-  /* margin-bottom: 10%; */
 }
 .card {
   margin: 10px;
@@ -644,15 +681,26 @@ form {
   opacity: 0.35;
   position: relative;
 }
-
+.card-price-toggle > .monthly {
+  color: black;
+  transform: scale(1.4);
+}
 .card-pricing-toggle.card-price--annual .card-price-toggle span.monthly {
   opacity: 0.35;
+  color: black;
+  transform: scale(1);
 }
 
 .card-pricing-toggle.card-price--annual .card-price-toggle span.annually {
+  color: black;
   opacity: 1;
+  transform: scale(1.4);
 }
-
+.fas {
+  width: 18px;
+  height: 18px;
+  color: rgb(226, 226, 10);
+}
 .card-price-toggle .input-price-period {
   position: relative;
   display: inline-block;
