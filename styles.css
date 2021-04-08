@@ -244,6 +244,8 @@ ul li:nth-child(odd) {
   background: linear-gradient(to right, rgb(247, 72, 72), rgb(82, 49, 43));
   text-align: left;
   padding-left: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   transform: perspective(500px) rotateY(45deg);
 }
 
@@ -251,6 +253,8 @@ ul li:nth-child(even) {
   background: linear-gradient(to left, rgb(247, 72, 72), rgb(82, 49, 43));
   text-align: right;
   padding-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   transform: perspective(500px) rotateY(-45deg);
 }
 
