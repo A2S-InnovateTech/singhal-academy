@@ -218,22 +218,6 @@ nav {
   background-color: #b4ddf8;
 }
 
-.opt {
-  /* outline: none; */
-  /* border: 10px solid #614107; */
-  /* font-size: 1.5rem;
-  line-height: 1;
-  font-weight: 900;
-  color: #000; */
-  /* text-shadow: 3px 0 #dbedf3; */
-  /* border-radius: 10px;
-  display: inline-block;
-  width: 80%;
-  height: 50px;
-  text-align: center;
-  margin: 10px;
-  background-image: linear-gradient(to right, #f0c27b, #4b1248); */
-}
 ul {
   padding: 0;
   list-style-type: none;
@@ -880,9 +864,10 @@ form {
     padding: 10px 20px;
     margin: 0 auto 30px auto;
   }
+
   .course-screen {
-    background-color: #fff;
-    /* background-color: #cae3ee; */
+    /* background-color: #fff; */
+    background-color: #cae3ee;
     /* background-image: url("images/imageedit_1_8527365081.png"); */
     height: auto;
     background-repeat: no-repeat;
@@ -890,9 +875,9 @@ form {
   }
 
   .course-text > h1 {
-    font-size: 55px;
+    font-size: 35px;
     color: #8d5024;
-    text-align: left;
+    text-align: center;
     text-transform: uppercase;
     font-weight: normal;
     font-family: "Bangers";
@@ -952,48 +937,58 @@ form {
   .card-body {
     background-color: #b4ddf8;
   }
-  .btn-primary {
-    background-color: rgb(
-      230,
-      155,
-      70
-    ); /* For browsers that do not support gradients */
-    background-image: linear-gradient(
-      to right,
-      rgb(231, 144, 73),
-      rgb(73, 73, 11)
-    );
+
+  ul {
+    padding: 0;
+    list-style-type: none;
   }
-  .btn-dark {
-    background-color: rgb(230, 155, 70);
-    background-image: linear-gradient(
-      to right,
-      rgb(73, 73, 11),
-      rgb(231, 144, 73)
-    );
+
+  ul li {
+    box-sizing: border-box;
+    width: 15em;
+    height: 3em;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 0.5em;
+    margin: 0.5em;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+    color: white;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    line-height: 3em;
+    transition: 0.3s;
+    cursor: pointer;
   }
-  .opt {
-    outline: none;
-    border: 10px solid #614107;
-    font-size: 2.4rem;
-    font-family: "Bangers";
-    line-height: 1.5;
-    font-weight: 900;
-    color: #4d6105;
-    text-shadow: 3px 0 #dbedf3;
-    border-radius: 15px;
-    display: inline-block;
-    width: 200px;
-    height: 200px;
-    text-align: center;
-    margin: 10px;
-    background-color: white;
+
+  ul li:nth-child(odd) {
+    background: linear-gradient(to right, rgb(247, 72, 72), rgb(82, 49, 43));
+    text-align: left;
+    padding-left: 10%;
+    transform: perspective(500px) rotateY(45deg);
   }
+
+  ul li:nth-child(even) {
+    background: linear-gradient(to left, rgb(247, 72, 72), rgb(82, 49, 43));
+    text-align: right;
+    padding-right: 10%;
+    transform: perspective(500px) rotateY(-45deg);
+  }
+
+  ul li:nth-child(odd):hover {
+    transform: perspective(200px) rotateY(45deg);
+    padding-left: 5%;
+  }
+
+  ul li:nth-child(even):hover {
+    transform: perspective(200px) rotateY(-45deg);
+    padding-right: 5%;
+  }
+
   .option {
     display: flex;
     justify-content: center;
-    /* margin-bottom: 10%; */
   }
+
   .card {
     margin: 10px;
   }
@@ -1324,5 +1319,132 @@ form {
     font-weight: bold;
     letter-spacing: 2px;
     word-wrap: break-word;
+  }
+
+  .card-price-total {
+    position: relative;
+    height: 57px;
+  }
+  .card-price-total .card-price {
+    position: absolute;
+    width: 100%;
+  }
+  .card-pricing-toggle .card-price-total .card-price:first-of-type {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .card-pricing-toggle .card-price-total .card-price:last-of-type {
+    opacity: 0;
+    transition: all 0.1s ease;
+  }
+
+  .card-pricing-toggle.card-price--annual
+    .card-price-total
+    .card-price:first-of-type {
+    opacity: 0;
+    transition: all 0.1s ease;
+  }
+
+  .card-pricing-toggle.card-price--annual
+    .card-price-total
+    .card-price:last-of-type {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .card-price {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+
+  .card-price .period {
+    font-size: 0.8rem;
+  }
+
+  .card-price-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .card-price-toggle span {
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .card-price-toggle span.annually {
+    opacity: 0.35;
+    position: relative;
+  }
+  .card-price-toggle > .monthly {
+    color: black;
+    transform: scale(1.2);
+  }
+  .card-pricing-toggle.card-price--annual .card-price-toggle span.monthly {
+    opacity: 0.35;
+    color: black;
+    transform: scale(1);
+  }
+
+  .card-pricing-toggle.card-price--annual .card-price-toggle span.annually {
+    color: black;
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  .fas {
+    width: 18px;
+    height: 18px;
+    color: rgb(226, 226, 10);
+  }
+  .card-price-toggle .input-price-period {
+    position: relative;
+    display: inline-block;
+    margin: 0 1rem;
+  }
+
+  .card-price-toggle .input-price-period input {
+    display: none;
+  }
+
+  .card-price-toggle .input-price-period input:checked + label:active:after {
+    left: 25px;
+  }
+
+  .card-price-toggle .input-price-period input:checked + label:after {
+    left: 41px;
+    background: #52c5f7;
+  }
+
+  .card-price-toggle .input-price-period label {
+    position: relative;
+    display: block;
+    width: 66px;
+    height: 26px;
+    border-radius: 50px;
+    background: #ffffff;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    margin-bottom: 0;
+  }
+
+  .card-price-toggle .input-price-period label::after {
+    position: relative;
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: 3px;
+    left: 5px;
+    border-radius: 50%;
+    background: #52c5f7;
+    pointer-events: none;
+    transition: all 0.4s ease-in-out;
   }
 }
