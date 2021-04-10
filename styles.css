@@ -607,6 +607,83 @@ form {
   word-wrap: break-word;
 }
 
+.footer-social > ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer-area {
+  border-bottom: 1px solid #8b9199;
+  padding: 40px;
+}
+
+.footer-content p {
+  font-size: 15px;
+  margin: 30px 0 30px;
+  position: relative;
+  color: #fff;
+}
+
+.footer-content p::after {
+  background: #2a2a2a;
+  bottom: -30px;
+  content: "";
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%);
+  width: 80%;
+}
+
+.footer-content h6 {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.footer-social {
+  margin-top: 30px;
+}
+
+.footer-social > ol {
+  display: inline-flex;
+}
+
+.footer-social ol li a {
+  border: 1px solid #8b9199;
+  color: #8b9199;
+  display: inline-block;
+  height: 40px;
+  margin: 0 10px;
+  padding-top: 7px;
+  transition: all 0.4s ease 0s;
+  width: 40px;
+}
+
+.footer-social ol li a:hover {
+  border: 1px solid #fff;
+  color: #fff;
+  transform: scale(1.4);
+}
+
+.footer-content img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.footer-area,
+footer {
+  background: #2a2a2a;
+  color: #fff;
+}
+
+footer p {
+  padding: 10px 0;
+  text-align: center;
+  margin-bottom: 0;
+}
+
 .card-price-total {
   position: relative;
   height: 57px;
@@ -968,6 +1045,8 @@ form {
     background: linear-gradient(to right, rgb(247, 72, 72), rgb(82, 49, 43));
     text-align: left;
     padding-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     transform: perspective(500px) rotateY(45deg);
   }
 
@@ -975,6 +1054,8 @@ form {
     background: linear-gradient(to left, rgb(247, 72, 72), rgb(82, 49, 43));
     text-align: right;
     padding-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     transform: perspective(500px) rotateY(-45deg);
   }
 
@@ -1323,6 +1404,83 @@ form {
     font-weight: bold;
     letter-spacing: 2px;
     word-wrap: break-word;
+  }
+  .footer-social > ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .footer-area {
+    border-bottom: 1px solid #353c46;
+    padding-top: 30px;
+    padding-left: auto;
+    padding-right: auto;
+  }
+
+  .footer-content p {
+    font-size: 12px;
+    margin: 30px 0 60px;
+    position: relative;
+    color: #fff;
+  }
+
+  .footer-content p::after {
+    background: #2a2a2a;
+    bottom: -30px;
+    content: "";
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    width: 80%;
+  }
+
+  .footer-content h6 {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  .footer-social {
+    margin-top: 30px;
+  }
+
+  .footer-social > ol {
+    display: inline-flex;
+  }
+
+  .footer-social ol li a {
+    border: 1px solid #8b9199;
+    color: #8b9199;
+    display: inline-block;
+    height: 30px;
+    margin: 0 5px;
+    padding-top: 3.5px;
+    transition: all 0.4s ease 0s;
+    width: 30px;
+  }
+
+  .footer-social ol li a:hover {
+    border: 1px solid #fff;
+    color: #fff;
+    transform: scale(1.4);
+  }
+
+  .footer-content img {
+    width: 100px;
+  }
+
+  .footer-area,
+  footer {
+    background: #2a2a2a;
+    color: #fff;
+  }
+
+  footer p {
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 0;
   }
 
   .card-price-total {
