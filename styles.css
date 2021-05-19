@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Luckiest+Guy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
-
+*{
+  scroll-behavior: smooth;
+}
 body {
   margin: 0%;
 }
@@ -226,8 +228,9 @@ ul {
   list-style-type: none;
 }
 
-ul li {
+ul a li {
   box-sizing: border-box;
+  text-decoration: none;
   width: 15em;
   height: 3em;
   font-size: 22px;
@@ -243,7 +246,7 @@ ul li {
   cursor: pointer;
 }
 
-ul li:nth-child(odd) {
+.odd {
   background: linear-gradient(to right, rgb(247, 72, 72), rgb(82, 49, 43));
   text-align: left;
   padding-left: 10%;
@@ -252,7 +255,7 @@ ul li:nth-child(odd) {
   transform: perspective(500px) rotateY(45deg);
 }
 
-ul li:nth-child(even) {
+.even {
   background: linear-gradient(to left, rgb(247, 72, 72), rgb(82, 49, 43));
   text-align: right;
   padding-right: 10%;
@@ -261,12 +264,12 @@ ul li:nth-child(even) {
   transform: perspective(500px) rotateY(-45deg);
 }
 
-ul li:nth-child(odd):hover {
+.odd:hover {
   transform: perspective(200px) rotateY(45deg);
   padding-left: 5%;
 }
 
-ul li:nth-child(even):hover {
+.even:hover {
   transform: perspective(200px) rotateY(-45deg);
   padding-right: 5%;
 }
