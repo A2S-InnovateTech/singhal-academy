@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Luckiest+Guy&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Actor&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
 
 body {
   margin: 0%;
@@ -9,7 +9,8 @@ nav {
 }
 .navbar-brand-logo {
   width: 63px;
-  padding-left: 10px;
+  border-radius: 50%;
+  margin-left: 10px;
 }
 .nav-link {
   color: #fff;
@@ -39,7 +40,7 @@ nav {
   );
 }
 .home-screen {
-  background-image: url(images/background-image.jpg);
+  background-image: url(images/hand-painted.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
@@ -61,7 +62,7 @@ nav {
   width: 80% !important;
   color: rgb(172, 172, 185);
   text-align: center;
-  font-family: "Luckiest Guy", cursive;
+  font-family: 'Luckiest Guy', cursive;
   word-spacing: 0.5em;
   text-transform: uppercase;
   font-weight: normal;
@@ -72,7 +73,7 @@ nav {
 .home-text {
   color: #c7e31c;
   text-align: center;
-  font-family: "Bangers", cursive;
+  font-family: 'Bangers', cursive;
   letter-spacing: 2px;
   word-wrap: break-word;
   text-transform: uppercase;
@@ -88,7 +89,7 @@ nav {
   border: none;
   font-size: 20px;
   padding: 10px 20px;
-  margin: 50px auto;
+  margin: 50px auto 120px auto;
 }
 .about-image {
   background-image: url(images/Bokeh.jpg);
@@ -101,7 +102,7 @@ nav {
   width: 80% !important;
   color: #f8eaa9;
   text-align: center;
-  font-family: "Luckiest Guy", cursive;
+  font-family: 'Luckiest Guy', cursive;
   word-spacing: 0.5em;
   text-transform: uppercase;
   font-weight: normal;
@@ -118,7 +119,7 @@ nav {
   margin-top: 50px;
   margin-bottom: 30px;
   font-size: xx-large;
-  font-family: "Bangers";
+  font-family: 'Bangers';
   text-align: left;
   font-weight: bold;
   letter-spacing: 2px;
@@ -129,7 +130,7 @@ nav {
   color: #2a2a2a;
   font-size: large;
   text-align: left;
-  font-family: "Actor", sans-serif;
+  font-family: 'Actor', sans-serif;
   letter-spacing: 1px;
   font-weight: normal;
   line-height: 1.5em;
@@ -145,6 +146,8 @@ nav {
   padding: 10px 20px;
   margin: 0 auto 50px auto;
 }
+
+
 .course-screen {
   /* background-color: #fff; */
   background-color: #cae3ee;
@@ -160,7 +163,7 @@ nav {
   text-align: center;
   text-transform: uppercase;
   font-weight: normal;
-  font-family: "Bangers";
+  font-family: 'Bangers';
   line-height: 41px;
   letter-spacing: 2px;
   word-wrap: break-word;
@@ -174,7 +177,7 @@ nav {
   text-transform: uppercase;
   font-size: 39px;
   line-height: 41px;
-  font-family: "Bangers";
+  font-family: 'Bangers';
   letter-spacing: 2px;
   word-wrap: break-word;
   margin: 30px auto 0 auto;
@@ -186,7 +189,7 @@ nav {
   text-transform: uppercase;
   font-weight: normal;
   line-height: 41px;
-  font-family: "Bangers";
+  font-family: 'Bangers';
   letter-spacing: 2px;
   word-wrap: break-word;
 }
@@ -195,7 +198,7 @@ nav {
 }
 
 .course-text > ul li::before {
-  content: "\2022";
+  content: '\2022';
   color: #fff;
   font-weight: bold;
   display: inline-block;
@@ -210,7 +213,7 @@ nav {
   text-transform: uppercase;
   font-weight: normal;
   line-height: 41px;
-  font-family: "Bangers";
+  font-family: 'Bangers';
   letter-spacing: 2px;
   word-wrap: break-word;
 }
@@ -288,7 +291,7 @@ ul li:nth-child(even):hover {
   width: 80% !important;
   color: #2a2a2a;
   text-align: center;
-  font-family: "Luckiest Guy", cursive;
+  font-family: 'Luckiest Guy', cursive;
   word-spacing: 0.5em;
   text-transform: uppercase;
   font-weight: normal;
@@ -305,7 +308,7 @@ ul li:nth-child(even):hover {
   text-transform: uppercase;
   font-weight: normal;
   line-height: 41px;
-  font-family: "Bangers";
+  font-family: 'Bangers';
   letter-spacing: 2px;
   word-wrap: break-word;
 }
@@ -321,7 +324,7 @@ ul li:nth-child(even):hover {
   width: 80% !important;
   color: #8d2424;
   text-align: center;
-  font-family: "Luckiest Guy", cursive;
+  font-family: 'Luckiest Guy', cursive;
   word-spacing: 0.5em;
   text-transform: uppercase;
   font-weight: normal;
@@ -334,7 +337,7 @@ ul li:nth-child(even):hover {
   color: #2a2a2a;
   text-align: center;
   font-style: italic;
-  font-family: "Bangers", cursive;
+  font-family: 'Bangers', cursive;
   letter-spacing: 2px;
   word-wrap: break-word;
   text-transform: uppercase;
@@ -347,7 +350,7 @@ ul li:nth-child(even):hover {
   color: #f8eaa9;
   text-align: left;
   font-style: italic;
-  font-family: "Bangers", cursive;
+  font-family: 'Bangers', cursive;
   letter-spacing: 2px;
   word-wrap: break-word;
   text-transform: uppercase;
@@ -366,7 +369,7 @@ ul li:nth-child(even):hover {
   text-decoration: underline;
   color: #8d5024;
   text-align: center;
-  font-family: "Luckiest Guy", cursive;
+  font-family: 'Luckiest Guy', cursive;
   text-transform: uppercase;
   font-weight: normal;
   line-height: 1.1;
@@ -381,7 +384,7 @@ ul li:nth-child(even):hover {
   text-transform: uppercase;
   font-size: 45px;
   line-height: 41px;
-  font-family: "Bangers";
+  font-family: 'Bangers';
   letter-spacing: 2px;
   word-wrap: break-word;
   margin: 30px auto 0 auto;
@@ -396,7 +399,7 @@ ul li:nth-child(even):hover {
   font-weight: normal;
   font-size: 30px;
   line-height: 41px;
-  font-family: "Bangers";
+  font-family: 'Bangers';
   letter-spacing: 2px;
   word-wrap: break-word;
   padding: 10px;
@@ -417,7 +420,7 @@ table {
   width: 80% !important;
   color: #f8eaa9;
   text-align: center;
-  font-family: "Luckiest Guy", cursive;
+  font-family: 'Luckiest Guy', cursive;
   word-spacing: 0.5em;
   text-transform: uppercase;
   font-weight: normal;
@@ -435,7 +438,7 @@ table {
   color: rgb(194, 59, 59);
   margin-bottom: 30px;
   font-size: 20px;
-  font-family: "Actor";
+  font-family: 'Actor';
   text-align: center;
   font-weight: bold;
   letter-spacing: 1px;
@@ -446,7 +449,7 @@ table {
   color: rgb(141, 80, 36);
   font-size: 22px;
   text-align: center;
-  font-family: "Actor", sans-serif;
+  font-family: 'Actor', sans-serif;
   letter-spacing: 1px;
   font-weight: bold;
   line-height: 1.5em;
@@ -472,7 +475,7 @@ form {
   color: #2a2a2a;
   font-weight: bold;
   text-align: center;
-  font-family: "Actor";
+  font-family: 'Actor';
   font-size: 56px;
   letter-spacing: 1px;
   line-height: 1.5em;
@@ -482,7 +485,7 @@ form {
   color: rgb(141, 36, 36);
   font-weight: normal;
   text-align: center;
-  font-family: "Actor";
+  font-family: 'Actor';
   font-size: 26px;
   letter-spacing: 1px;
   line-height: 1.5em;
@@ -492,7 +495,7 @@ form {
   text-decoration: underline;
   font-style: italic;
   text-align: center;
-  font-family: "Capture it";
+  font-family: 'Capture it';
   font-weight: bold;
   letter-spacing: 2px;
   word-wrap: break-word;
@@ -509,7 +512,7 @@ form {
   width: 80% !important;
   color: #2a2a2a;
   text-align: center;
-  font-family: "Luckiest Guy", cursive;
+  font-family: 'Luckiest Guy', cursive;
   word-spacing: 0.5em;
   text-transform: uppercase;
   font-weight: normal;
@@ -522,7 +525,7 @@ form {
   width: 80% !important;
   color: #fff;
   text-align: center;
-  font-family: "Bangers";
+  font-family: 'Bangers';
   word-spacing: 0.2em;
   text-transform: uppercase;
   font-weight: normal;
@@ -541,7 +544,7 @@ form {
   color: rgb(194, 59, 59);
   margin-bottom: 30px;
   font-size: 35px;
-  font-family: "Actor";
+  font-family: 'Actor';
   text-align: center;
   font-weight: bold;
   letter-spacing: 1px;
@@ -552,7 +555,7 @@ form {
   color: rgb(141, 80, 36);
   font-size: 22px;
   text-align: center;
-  font-family: "Actor", sans-serif;
+  font-family: 'Actor', sans-serif;
   letter-spacing: 1px;
   font-weight: bold;
   line-height: 1.5em;
@@ -581,7 +584,7 @@ form {
   color: #2a2a2a;
   font-weight: bold;
   text-align: center;
-  font-family: "Actor";
+  font-family: 'Actor';
   font-size: 56px;
   letter-spacing: 1px;
   line-height: 1.5em;
@@ -591,7 +594,7 @@ form {
   color: rgb(141, 36, 36);
   font-weight: normal;
   text-align: center;
-  font-family: "Actor";
+  font-family: 'Actor';
   font-size: 26px;
   letter-spacing: 1px;
   line-height: 1.5em;
@@ -601,7 +604,7 @@ form {
   text-decoration: underline;
   font-style: italic;
   text-align: center;
-  font-family: "Capture it";
+  font-family: 'Capture it';
   font-weight: bold;
   letter-spacing: 2px;
   word-wrap: break-word;
@@ -627,7 +630,7 @@ form {
 .footer-content p::after {
   background: #2a2a2a;
   bottom: -30px;
-  content: "";
+  content: '';
   height: 1px;
   left: 50%;
   position: absolute;
@@ -684,7 +687,7 @@ footer p {
   margin-bottom: 0;
 }
 
-.card-price-total {
+/* .card-price-total {
   position: relative;
   height: 57px;
 }
@@ -737,7 +740,7 @@ footer p {
 
 .card-price-toggle span {
   font-size: 20px;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: bold;
   transition: all 0.3s ease-in-out;
 }
@@ -800,7 +803,7 @@ footer p {
 .card-price-toggle .input-price-period label::after {
   position: relative;
   display: block;
-  content: "";
+  content: '';
   width: 20px;
   height: 20px;
   top: 3px;
@@ -809,8 +812,78 @@ footer p {
   background: #52c5f7;
   pointer-events: none;
   transition: all 0.4s ease-in-out;
+} */
+/* ********************************************************************************* */
+.card-img-top{
+  width: 100%;
+  height: 200px;
+}
+.card-price-toggle{
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 34px;
 }
 
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #52c5f7;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #fff;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #52c5f7;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(46px);
+  -ms-transform: translateX(46px);
+  transform: translateX(46px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
 @media (min-width: 300px) and (max-width: 580px) {
   body {
     margin: 0%;
@@ -860,7 +933,7 @@ footer p {
     width: 80% !important;
     color: rgb(172, 172, 185);
     text-align: center;
-    font-family: "Luckiest Guy", cursive;
+    font-family: 'Luckiest Guy', cursive;
     word-spacing: 0.5em;
     text-transform: uppercase;
     font-weight: normal;
@@ -871,7 +944,7 @@ footer p {
   .home-text {
     color: #c7e31c;
     text-align: center;
-    font-family: "Bangers", cursive;
+    font-family: 'Bangers', cursive;
     letter-spacing: 2px;
     word-wrap: break-word;
     text-transform: uppercase;
@@ -900,7 +973,7 @@ footer p {
     width: 80% !important;
     color: #f8eaa9;
     text-align: center;
-    font-family: "Luckiest Guy", cursive;
+    font-family: 'Luckiest Guy', cursive;
     word-spacing: 0.5em;
     text-transform: uppercase;
     font-weight: normal;
@@ -917,7 +990,7 @@ footer p {
     margin-top: 50px;
     margin-bottom: 30px;
     font-size: xx-large;
-    font-family: "Bangers";
+    font-family: 'Bangers';
     text-align: left;
     font-weight: bold;
     letter-spacing: 2px;
@@ -929,7 +1002,7 @@ footer p {
     color: #2a2a2a;
     font-size: large;
     text-align: left;
-    font-family: "Actor", sans-serif;
+    font-family: 'Actor', sans-serif;
     letter-spacing: 1px;
     font-weight: normal;
     line-height: 1.5em;
@@ -961,7 +1034,7 @@ footer p {
     text-align: center;
     text-transform: uppercase;
     font-weight: normal;
-    font-family: "Bangers";
+    font-family: 'Bangers';
     line-height: 41px;
     letter-spacing: 2px;
     word-wrap: break-word;
@@ -975,7 +1048,7 @@ footer p {
     text-transform: uppercase;
     font-size: 39px;
     line-height: 41px;
-    font-family: "Bangers";
+    font-family: 'Bangers';
     letter-spacing: 2px;
     word-wrap: break-word;
     margin: 30px auto 0 auto;
@@ -987,7 +1060,7 @@ footer p {
     text-transform: uppercase;
     font-weight: normal;
     line-height: 41px;
-    font-family: "Bangers";
+    font-family: 'Bangers';
     letter-spacing: 2px;
     word-wrap: break-word;
   }
@@ -996,7 +1069,7 @@ footer p {
   }
 
   .course-text > ul li::before {
-    content: "\2022";
+    content: '\2022';
     color: #fff;
     font-weight: bold;
     display: inline-block;
@@ -1011,7 +1084,7 @@ footer p {
     text-transform: uppercase;
     font-weight: normal;
     line-height: 41px;
-    font-family: "Bangers";
+    font-family: 'Bangers';
     letter-spacing: 2px;
     word-wrap: break-word;
   }
@@ -1089,7 +1162,7 @@ footer p {
     width: 80% !important;
     color: #2a2a2a;
     text-align: center;
-    font-family: "Luckiest Guy", cursive;
+    font-family: 'Luckiest Guy', cursive;
     word-spacing: 0.5em;
     text-transform: uppercase;
     font-weight: normal;
@@ -1106,7 +1179,7 @@ footer p {
     text-transform: uppercase;
     font-weight: normal;
     line-height: 41px;
-    font-family: "Bangers";
+    font-family: 'Bangers';
     letter-spacing: 2px;
     word-wrap: break-word;
   }
@@ -1122,7 +1195,7 @@ footer p {
     width: 80% !important;
     color: #8d2424;
     text-align: center;
-    font-family: "Luckiest Guy", cursive;
+    font-family: 'Luckiest Guy', cursive;
     word-spacing: 0.5em;
     text-transform: uppercase;
     font-weight: normal;
@@ -1135,7 +1208,7 @@ footer p {
     color: #fff;
     text-align: center;
     font-style: italic;
-    font-family: "Bangers", cursive;
+    font-family: 'Bangers', cursive;
     letter-spacing: 2px;
     word-wrap: break-word;
     text-transform: uppercase;
@@ -1148,7 +1221,7 @@ footer p {
     color: #f8eaa9;
     text-align: left;
     font-style: italic;
-    font-family: "Bangers", cursive;
+    font-family: 'Bangers', cursive;
     letter-spacing: 2px;
     word-wrap: break-word;
     text-transform: uppercase;
@@ -1167,7 +1240,7 @@ footer p {
     text-decoration: underline;
     color: #8d5024;
     text-align: center;
-    font-family: "Luckiest Guy", cursive;
+    font-family: 'Luckiest Guy', cursive;
     text-transform: uppercase;
     font-weight: normal;
     line-height: 1.1;
@@ -1182,7 +1255,7 @@ footer p {
     text-transform: uppercase;
     font-size: 35px;
     line-height: 41px;
-    font-family: "Bangers";
+    font-family: 'Bangers';
     letter-spacing: 2px;
     word-wrap: break-word;
     margin: 30px auto 0 auto;
@@ -1197,7 +1270,7 @@ footer p {
     font-weight: normal;
     font-size: 30px;
     line-height: 41px;
-    font-family: "Bangers";
+    font-family: 'Bangers';
     letter-spacing: 2px;
     word-wrap: break-word;
     padding: 10px;
@@ -1218,7 +1291,7 @@ footer p {
     width: 80% !important;
     color: #f8eaa9;
     text-align: center;
-    font-family: "Luckiest Guy", cursive;
+    font-family: 'Luckiest Guy', cursive;
     word-spacing: 0.5em;
     text-transform: uppercase;
     font-weight: normal;
@@ -1236,7 +1309,7 @@ footer p {
     color: rgb(194, 59, 59);
     margin-bottom: 10px !important;
     font-size: 20px !important;
-    font-family: "Actor";
+    font-family: 'Actor';
     text-align: center;
     font-weight: bold;
     letter-spacing: 1px;
@@ -1247,7 +1320,7 @@ footer p {
     color: rgb(141, 80, 36);
     font-size: 26px !important;
     text-align: center;
-    font-family: "Actor", sans-serif;
+    font-family: 'Actor', sans-serif;
     letter-spacing: 1px;
     font-weight: bold;
     line-height: 1.5em;
@@ -1273,7 +1346,7 @@ footer p {
     color: #2a2a2a;
     font-weight: bold;
     text-align: center;
-    font-family: "Actor";
+    font-family: 'Actor';
     font-size: 35px !important;
     letter-spacing: 1px;
     line-height: 1em;
@@ -1283,7 +1356,7 @@ footer p {
     color: rgb(141, 36, 36);
     font-weight: normal;
     text-align: center;
-    font-family: "Actor";
+    font-family: 'Actor';
     font-size: 20px !important;
     margin: auto auto 20px auto !important;
   }
@@ -1308,7 +1381,7 @@ footer p {
     width: 80% !important;
     color: #2a2a2a;
     text-align: center;
-    font-family: "Luckiest Guy", cursive;
+    font-family: 'Luckiest Guy', cursive;
     word-spacing: 0.5em;
     text-transform: uppercase;
     font-weight: normal;
@@ -1321,7 +1394,7 @@ footer p {
     width: 80% !important;
     color: #fff;
     text-align: center;
-    font-family: "Bangers";
+    font-family: 'Bangers';
     word-spacing: 0.2em;
     text-transform: uppercase;
     font-weight: normal;
@@ -1340,7 +1413,7 @@ footer p {
     color: rgb(194, 59, 59);
     margin-bottom: 30px;
     font-size: 35px;
-    font-family: "Actor";
+    font-family: 'Actor';
     text-align: center;
     font-weight: bold;
     letter-spacing: 1px;
@@ -1351,7 +1424,7 @@ footer p {
     color: rgb(141, 80, 36);
     font-size: 22px;
     text-align: center;
-    font-family: "Actor", sans-serif;
+    font-family: 'Actor', sans-serif;
     letter-spacing: 1px;
     font-weight: bold;
     line-height: 1.5em;
@@ -1380,7 +1453,7 @@ footer p {
     color: #2a2a2a;
     font-weight: bold;
     text-align: center;
-    font-family: "Actor";
+    font-family: 'Actor';
     font-size: 56px;
     letter-spacing: 1px;
     line-height: 1.5em;
@@ -1390,7 +1463,7 @@ footer p {
     color: rgb(141, 36, 36);
     font-weight: normal;
     text-align: center;
-    font-family: "Actor";
+    font-family: 'Actor';
     font-size: 26px;
     letter-spacing: 1px;
     line-height: 1.5em;
@@ -1400,7 +1473,7 @@ footer p {
     text-decoration: underline;
     font-style: italic;
     text-align: center;
-    font-family: "Capture it";
+    font-family: 'Capture it';
     font-weight: bold;
     letter-spacing: 2px;
     word-wrap: break-word;
@@ -1427,7 +1500,7 @@ footer p {
   .footer-content p::after {
     background: #2a2a2a;
     bottom: -30px;
-    content: "";
+    content: '';
     height: 1px;
     left: 50%;
     position: absolute;
@@ -1483,7 +1556,7 @@ footer p {
     margin-bottom: 0;
   }
 
-  .card-price-total {
+  /* .card-price-total {
     position: relative;
     height: 57px;
   }
@@ -1536,7 +1609,7 @@ footer p {
 
   .card-price-toggle span {
     font-size: 20px;
-    font-family: "Raleway", sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
   }
@@ -1599,7 +1672,7 @@ footer p {
   .card-price-toggle .input-price-period label::after {
     position: relative;
     display: block;
-    content: "";
+    content: '';
     width: 20px;
     height: 20px;
     top: 3px;
@@ -1609,4 +1682,4 @@ footer p {
     pointer-events: none;
     transition: all 0.4s ease-in-out;
   }
-}
+} */
