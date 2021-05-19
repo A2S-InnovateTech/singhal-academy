@@ -686,7 +686,7 @@ footer p {
   height: 200px;
 }
 .card-price-toggle {
-  width: auto;
+  width: 80%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -1490,7 +1490,7 @@ input:checked + .slider:before {
     border-radius: 50%;
   }
 }
-@media (min-width: 765px) and (max-width: 995px){
+@media (min-width: 765px) and (max-width: 995px) {
   .card-price-toggle {
     width: 100%;
     margin: auto;
@@ -1560,5 +1560,4 @@ input:checked + .slider:before {
   .slider.round:before {
     border-radius: 50%;
   }
-}
 }
