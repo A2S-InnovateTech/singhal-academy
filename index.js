@@ -641,6 +641,120 @@ document
       }
     }
   });
+
+// ******************************************************************JEE / NEET*****************************************************************************
+
+document.addEventListener('DOMContentLoaded', function () {
+  var jee_neet_online = document.getElementById('jee-neet-online');
+  var jee_neet_offline = document.getElementById('jee-neet-offline');
+  var jee_neet_online_price = document.getElementById('jee-neet-online-price');
+  var jee_neet_offline_price = document.getElementById(
+    'jee-neet-offline-price'
+  );
+  var jee_neet_checkbox = document.getElementById('jee-neet-checkbox');
+
+  jee_neet_online_price.style.display = 'block';
+  jee_neet_offline_price.style.display = 'none';
+  jee_neet_offline.style.opacity = '0.6';
+
+  jee_neet_checkbox.addEventListener('change', function () {
+    if (jee_neet_checkbox.checked) {
+      console.log('Checked');
+      jee_neet_offline.style.opacity = '1';
+      jee_neet_online.style.opacity = '0.6';
+      jee_neet_offline_price.style.display = 'block';
+      jee_neet_online_price.style.display = 'none';
+    } else {
+      console.log('Not checked');
+      jee_neet_online.style.opacity = '1';
+      jee_neet_offline.style.opacity = '0.6';
+      jee_neet_online_price.style.display = 'block';
+      jee_neet_offline_price.style.display = 'none';
+    }
+  });
+});
+document.getElementById('jee-neet-getCode').addEventListener('click', () => {
+  var x = document.getElementById('jee-neet-code').value;
+  console.log(x);
+  if (x === 'Tarun2021') {
+    document.getElementById('jee-neet-online-price').innerHTML = '18,000';
+    document.getElementById('jee-neet-offline-price').innerHTML = '20,000';
+    document.getElementById('jee-neet-success-message').innerHTML =
+      'Coupon code applied successfully.';
+    document.getElementById('jee-neet-message').innerHTML =
+      'Coupon discount: ₹500';
+    console.log('Success');
+  } else {
+    if (x === '') {
+      document.getElementById('jee-neet-message').innerHTML =
+        'Please Enter Code!!!';
+    } else {
+      document.getElementById('jee-neet-online-price').innerHTML = '18,500';
+      document.getElementById('jee-neet-offline-price').innerHTML = '20,500';
+      document.getElementById('jee-neet-message').innerHTML =
+        'Invalid Coupon Code!!!';
+      document.getElementById('jee-neet-success-message').innerHTML = '';
+    }
+  }
+});
+
+// ******************************************************************PSYCHOLOGY*****************************************************************************
+
+document.addEventListener('DOMContentLoaded', function () {
+  var psychology_online = document.getElementById('psychology-online');
+  var psychology_offline = document.getElementById('psychology-offline');
+  var psychology_online_price = document.getElementById(
+    'psychology-online-price'
+  );
+  var psychology_offline_price = document.getElementById(
+    'psychology-offline-price'
+  );
+  var psychology_checkbox = document.getElementById('psychology-checkbox');
+
+  psychology_online_price.style.display = 'block';
+  psychology_offline_price.style.display = 'none';
+  psychology_offline.style.opacity = '0.6';
+
+  psychology_checkbox.addEventListener('change', function () {
+    if (psychology_checkbox.checked) {
+      console.log('Checked');
+      psychology_offline.style.opacity = '1';
+      psychology_online.style.opacity = '0.6';
+      psychology_offline_price.style.display = 'block';
+      psychology_online_price.style.display = 'none';
+    } else {
+      console.log('Not checked');
+      psychology_online.style.opacity = '1';
+      psychology_offline.style.opacity = '0.6';
+      psychology_online_price.style.display = 'block';
+      psychology_offline_price.style.display = 'none';
+    }
+  });
+});
+document.getElementById('psychology-getCode').addEventListener('click', () => {
+  var x = document.getElementById('psychology-code').value;
+  console.log(x);
+  if (x === 'Tarun2021') {
+    document.getElementById('psychology-online-price').innerHTML = '18,000';
+    document.getElementById('psychology-offline-price').innerHTML = '20,000';
+    document.getElementById('psychology-success-message').innerHTML =
+      'Coupon code applied successfully.';
+    document.getElementById('psychology-message').innerHTML =
+      'Coupon discount: ₹500';
+    console.log('Success');
+  } else {
+    if (x === '') {
+      document.getElementById('psychology-message').innerHTML =
+        'Please Enter Code!!!';
+    } else {
+      document.getElementById('psychology-online-price').innerHTML = '18,500';
+      document.getElementById('psychology-offline-price').innerHTML = '20,500';
+      document.getElementById('psychology-message').innerHTML =
+        'Invalid Coupon Code!!!';
+      document.getElementById('psychology-success-message').innerHTML = '';
+    }
+  }
+});
 // document.addEventListener('DOMContentLoaded', function () {
 //   var online_2 = document.getElementById('online-2');
 //   var offline_2 = document.getElementById('offline-2');

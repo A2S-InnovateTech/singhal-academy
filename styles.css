@@ -62,7 +62,7 @@ nav {
 }
 .home-heading {
   width: 80% !important;
-  color: rgb(172, 172, 185);
+  color: rgb(95, 95, 100);
   text-align: center;
   font-family: 'Luckiest Guy', cursive;
   word-spacing: 0.5em;
@@ -73,7 +73,7 @@ nav {
   margin: 50px auto;
 }
 .home-text {
-  color: #c7e31c;
+  color: #3c336d;
   text-align: center;
   font-family: 'Bangers', cursive;
   letter-spacing: 2px;
@@ -798,7 +798,7 @@ input:checked + .slider:before {
   }
   .home-heading {
     width: 80% !important;
-    color: rgb(172, 172, 185);
+    color: rgb(95, 95, 100));
     text-align: center;
     font-family: 'Luckiest Guy', cursive;
     word-spacing: 0.5em;
@@ -809,7 +809,7 @@ input:checked + .slider:before {
     margin: 50px auto;
   }
   .home-text {
-    color: #c7e31c;
+    color: #3c336d;
     text-align: center;
     font-family: 'Bangers', cursive;
     letter-spacing: 2px;
