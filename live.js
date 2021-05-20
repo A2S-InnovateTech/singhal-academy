@@ -140,36 +140,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
-document
-  .getElementById('live-IX-maths-getCode')
-  .addEventListener('click', () => {
-    var x = document.getElementById('live-IX-maths-code').value;
-    console.log(x);
-    if (x === 'Tarun2021') {
-      document.getElementById('live-IX-maths-online-price').innerHTML =
-        '18,000';
-      document.getElementById('live-IX-maths-offline-price').innerHTML =
-        '20,000';
-      document.getElementById('live-IX-maths-success-message').innerHTML =
-        'Coupon code applied successfully.';
-      document.getElementById('live-IX-maths-message').innerHTML =
-        'Coupon discount: ₹500';
-      console.log('Success');
-    } else {
-      if (x === '') {
-        document.getElementById('live-IX-maths-message').innerHTML =
-          'Please Enter Code!!!';
-      } else {
-        document.getElementById('live-IX-maths-online-price').innerHTML =
-          '18,500';
-        document.getElementById('live-IX-maths-offline-price').innerHTML =
-          '20,500';
-        document.getElementById('live-IX-maths-message').innerHTML =
-          'Invalid Coupon Code!!!';
-        document.getElementById('live-IX-maths-success-message').innerHTML = '';
-      }
-    }
-  });
 
 // ******************************************************************Xth class*****************************************************************************
 
@@ -208,38 +178,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
-document
-  .getElementById('live-X-science-getCode')
-  .addEventListener('click', () => {
-    var x = document.getElementById('live-X-science-code').value;
-    console.log(x);
-    if (x === 'Tarun2021') {
-      // var price = document.getElementById('card-price-total').textContent;
-      document.getElementById('live-X-science-online-price').innerHTML =
-        '18,000';
-      document.getElementById('live-X-science-offline-price').innerHTML =
-        '20,000';
-      document.getElementById('live-X-science-success-message').innerHTML =
-        'Coupon code applied successfully.';
-      document.getElementById('live-X-science-message').innerHTML =
-        'Coupon discount: ₹500';
-      console.log('Success');
-    } else {
-      if (x === '') {
-        document.getElementById('live-X-science-message').innerHTML =
-          'Please Enter Code!!!';
-      } else {
-        document.getElementById('live-X-science-online-price').innerHTML =
-          '18,500';
-        document.getElementById('live-X-science-offline-price').innerHTML =
-          '20,500';
-        document.getElementById('live-X-science-message').innerHTML =
-          'Invalid Coupon Code!!!';
-        document.getElementById('live-X-science-success-message').innerHTML =
-          '';
-      }
-    }
-  });
 
 document.addEventListener('DOMContentLoaded', function () {
   var live_X_maths_online = document.getElementById('live-X-maths-online');
@@ -272,35 +210,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
-document
-  .getElementById('live-X-maths-getCode')
-  .addEventListener('click', () => {
-    var x = document.getElementById('live-X-maths-code').value;
-    console.log(x);
-    if (x === 'Tarun2021') {
-      document.getElementById('live-X-maths-online-price').innerHTML = '18,000';
-      document.getElementById('live-X-maths-offline-price').innerHTML =
-        '20,000';
-      document.getElementById('live-X-maths-success-message').innerHTML =
-        'Coupon code applied successfully.';
-      document.getElementById('live-X-maths-message').innerHTML =
-        'Coupon discount: ₹500';
-      console.log('Success');
-    } else {
-      if (x === '') {
-        document.getElementById('live-X-maths-message').innerHTML =
-          'Please Enter Code!!!';
-      } else {
-        document.getElementById('live-X-maths-online-price').innerHTML =
-          '18,500';
-        document.getElementById('live-X-maths-offline-price').innerHTML =
-          '20,500';
-        document.getElementById('live-X-maths-message').innerHTML =
-          'Invalid Coupon Code!!!';
-        document.getElementById('live-X-maths-success-message').innerHTML = '';
-      }
-    }
-  });
 
 // ******************************************************************XIth class*****************************************************************************
 
@@ -337,36 +246,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
-document
-  .getElementById('live-XI-maths-getCode')
-  .addEventListener('click', () => {
-    var x = document.getElementById('live-XI-maths-code').value;
-    console.log(x);
-    if (x === 'Tarun2021') {
-      document.getElementById('live-XI-maths-online-price').innerHTML =
-        '20,000';
-      document.getElementById('live-XI-maths-offline-price').innerHTML =
-        '22,000';
-      document.getElementById('live-XI-maths-success-message').innerHTML =
-        'Coupon code applied successfully.';
-      document.getElementById('live-XI-maths-message').innerHTML =
-        'Coupon discount: ₹500';
-      console.log('Success');
-    } else {
-      if (x === '') {
-        document.getElementById('live-XI-maths-message').innerHTML =
-          'Please Enter Code!!!';
-      } else {
-        document.getElementById('live-XI-maths-online-price').innerHTML =
-          '20,500';
-        document.getElementById('live-XI-maths-offline-price').innerHTML =
-          '22,500';
-        document.getElementById('live-XI-maths-message').innerHTML =
-          'Invalid Coupon Code!!!';
-        document.getElementById('live-XI-maths-success-message').innerHTML = '';
-      }
-    }
-  });
 
 document.addEventListener('DOMContentLoaded', function () {
   var live_XI_physics_online = document.getElementById(
@@ -405,37 +284,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
-document
-  .getElementById('live-XI-physics-getCode')
-  .addEventListener('click', () => {
-    var x = document.getElementById('live-XI-physics-code').value;
-    console.log(x);
-    if (x === 'Tarun2021') {
-      document.getElementById('live-XI-physics-online-price').innerHTML =
-        '20,000';
-      document.getElementById('live-XI-physics-offline-price').innerHTML =
-        '22,000';
-      document.getElementById('live-XI-physics-success-message').innerHTML =
-        'Coupon code applied successfully.';
-      document.getElementById('live-XI-physics-message').innerHTML =
-        'Coupon discount: ₹500';
-      console.log('Success');
-    } else {
-      if (x === '') {
-        document.getElementById('live-XI-physics-message').innerHTML =
-          'Please Enter Code!!!';
-      } else {
-        document.getElementById('live-XI-physics-online-price').innerHTML =
-          '20,500';
-        document.getElementById('live-XI-physics-offline-price').innerHTML =
-          '22,500';
-        document.getElementById('live-XI-physics-message').innerHTML =
-          'Invalid Coupon Code!!!';
-        document.getElementById('live-XI-physics-success-message').innerHTML =
-          '';
-      }
-    }
-  });
 
 document.addEventListener('DOMContentLoaded', function () {
   var live_XI_chemistry_online = document.getElementById(
@@ -474,37 +322,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
-document
-  .getElementById('live-XI-chemistry-getCode')
-  .addEventListener('click', () => {
-    var x = document.getElementById('live-XI-chemistry-code').value;
-    console.log(x);
-    if (x === 'Tarun2021') {
-      document.getElementById('live-XI-chemistry-online-price').innerHTML =
-        '20,000';
-      document.getElementById('live-XI-chemistry-offline-price').innerHTML =
-        '22,000';
-      document.getElementById('live-XI-chemistry-success-message').innerHTML =
-        'Coupon code applied successfully.';
-      document.getElementById('live-XI-chemistry-message').innerHTML =
-        'Coupon discount: ₹500';
-      console.log('Success');
-    } else {
-      if (x === '') {
-        document.getElementById('live-XI-chemistry-message').innerHTML =
-          'Please Enter Code!!!';
-      } else {
-        document.getElementById('live-XI-chemistry-online-price').innerHTML =
-          '20,500';
-        document.getElementById('live-XI-chemistry-offline-price').innerHTML =
-          '22,500';
-        document.getElementById('live-XI-chemistry-message').innerHTML =
-          'Invalid Coupon Code!!!';
-        document.getElementById('live-XI-chemistry-success-message').innerHTML =
-          '';
-      }
-    }
-  });
 
 // ******************************************************************XIIth class*****************************************************************************
 
@@ -543,37 +360,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
-document
-  .getElementById('live-XII-maths-getCode')
-  .addEventListener('click', () => {
-    var x = document.getElementById('live-XII-maths-code').value;
-    console.log(x);
-    if (x === 'Tarun2021') {
-      document.getElementById('live-XII-maths-online-price').innerHTML =
-        '20,000';
-      document.getElementById('live-XII-maths-offline-price').innerHTML =
-        '22,000';
-      document.getElementById('live-XII-maths-success-message').innerHTML =
-        'Coupon code applied successfully.';
-      document.getElementById('live-XII-maths-message').innerHTML =
-        'Coupon discount: ₹500';
-      console.log('Success');
-    } else {
-      if (x === '') {
-        document.getElementById('live-XII-maths-message').innerHTML =
-          'Please Enter Code!!!';
-      } else {
-        document.getElementById('live-XII-maths-online-price').innerHTML =
-          '20,500';
-        document.getElementById('live-XII-maths-offline-price').innerHTML =
-          '22,500';
-        document.getElementById('live-XII-maths-message').innerHTML =
-          'Invalid Coupon Code!!!';
-        document.getElementById('live-XII-maths-success-message').innerHTML =
-          '';
-      }
-    }
-  });
 
 document.addEventListener('DOMContentLoaded', function () {
   var live_XII_physics_online = document.getElementById(
@@ -612,37 +398,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
-document
-  .getElementById('live-XII-physics-getCode')
-  .addEventListener('click', () => {
-    var x = document.getElementById('live-XII-physics-code').value;
-    console.log(x);
-    if (x === 'Tarun2021') {
-      document.getElementById('live-XII-physics-online-price').innerHTML =
-        '20,000';
-      document.getElementById('live-XII-physics-offline-price').innerHTML =
-        '22,000';
-      document.getElementById('live-XII-physics-success-message').innerHTML =
-        'Coupon code applied successfully.';
-      document.getElementById('live-XII-physics-message').innerHTML =
-        'Coupon discount: ₹500';
-      console.log('Success');
-    } else {
-      if (x === '') {
-        document.getElementById('live-XII-physics-message').innerHTML =
-          'Please Enter Code!!!';
-      } else {
-        document.getElementById('live-XII-physics-online-price').innerHTML =
-          '20,500';
-        document.getElementById('live-XII-physics-offline-price').innerHTML =
-          '22,500';
-        document.getElementById('live-XII-physics-message').innerHTML =
-          'Invalid Coupon Code!!!';
-        document.getElementById('live-XII-physics-success-message').innerHTML =
-          '';
-      }
-    }
-  });
 
 document.addEventListener('DOMContentLoaded', function () {
   var live_XII_chemistry_online = document.getElementById(
@@ -681,149 +436,77 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
-document
-  .getElementById('live-XII-chemistry-getCode')
-  .addEventListener('click', () => {
-    var x = document.getElementById('live-XII-chemistry-code').value;
-    console.log(x);
-    if (x === 'Tarun2021') {
-      document.getElementById('live-XII-chemistry-online-price').innerHTML =
-        '20,000';
-      document.getElementById('live-XII-chemistry-offline-price').innerHTML =
-        '22,000';
-      document.getElementById('live-XII-chemistry-success-message').innerHTML =
-        'Coupon code applied successfully.';
-      document.getElementById('live-XII-chemistry-message').innerHTML =
-        'Coupon discount: ₹500';
-      console.log('Success');
-    } else {
-      if (x === '') {
-        document.getElementById('live-XII-chemistry-message').innerHTML =
-          'Please Enter Code!!!';
-      } else {
-        document.getElementById('live-XII-chemistry-online-price').innerHTML =
-          '20,500';
-        document.getElementById('live-XII-chemistry-offline-price').innerHTML =
-          '22,500';
-        document.getElementById('live-XII-chemistry-message').innerHTML =
-          'Invalid Coupon Code!!!';
-        document.getElementById(
-          'live-XII-chemistry-success-message'
-        ).innerHTML = '';
-      }
-    }
-  });
 
 // ******************************************************************JEE / NEET*****************************************************************************
 
 document.addEventListener('DOMContentLoaded', function () {
-  var jee_neet_online = document.getElementById('jee-neet-online');
-  var jee_neet_offline = document.getElementById('jee-neet-offline');
-  var jee_neet_online_price = document.getElementById('jee-neet-online-price');
-  var jee_neet_offline_price = document.getElementById(
-    'jee-neet-offline-price'
+  var live_jee_neet_online = document.getElementById('live-jee-neet-online');
+  var live_jee_neet_offline = document.getElementById('live-jee-neet-offline');
+  var live_jee_neet_online_price = document.getElementById(
+    'live-jee-neet-online-price'
   );
-  var jee_neet_checkbox = document.getElementById('jee-neet-checkbox');
+  var live_jee_neet_offline_price = document.getElementById(
+    'live-jee-neet-offline-price'
+  );
+  var live_jee_neet_checkbox = document.getElementById('jee-neet-checkbox');
 
-  jee_neet_online_price.style.display = 'block';
-  jee_neet_offline_price.style.display = 'none';
-  jee_neet_offline.style.opacity = '0.6';
+  live_jee_neet_online_price.style.display = 'block';
+  live_jee_neet_offline_price.style.display = 'none';
+  live_jee_neet_offline.style.opacity = '0.6';
 
-  jee_neet_checkbox.addEventListener('change', function () {
-    if (jee_neet_checkbox.checked) {
+  live_jee_neet_checkbox.addEventListener('change', function () {
+    if (live_jee_neet_checkbox.checked) {
       console.log('Checked');
-      jee_neet_offline.style.opacity = '1';
-      jee_neet_online.style.opacity = '0.6';
-      jee_neet_offline_price.style.display = 'block';
-      jee_neet_online_price.style.display = 'none';
+      live_jee_neet_offline.style.opacity = '1';
+      live_jee_neet_online.style.opacity = '0.6';
+      live_jee_neet_offline_price.style.display = 'block';
+      live_jee_neet_online_price.style.display = 'none';
     } else {
       console.log('Not checked');
-      jee_neet_online.style.opacity = '1';
-      jee_neet_offline.style.opacity = '0.6';
-      jee_neet_online_price.style.display = 'block';
-      jee_neet_offline_price.style.display = 'none';
+      live_jee_neet_online.style.opacity = '1';
+      live_jee_neet_offline.style.opacity = '0.6';
+      live_jee_neet_online_price.style.display = 'block';
+      live_jee_neet_offline_price.style.display = 'none';
     }
   });
-});
-document.getElementById('jee-neet-getCode').addEventListener('click', () => {
-  var x = document.getElementById('jee-neet-code').value;
-  console.log(x);
-  if (x === 'Tarun2021') {
-    document.getElementById('jee-neet-online-price').innerHTML = '18,000';
-    document.getElementById('jee-neet-offline-price').innerHTML = '20,000';
-    document.getElementById('jee-neet-success-message').innerHTML =
-      'Coupon code applied successfully.';
-    document.getElementById('jee-neet-message').innerHTML =
-      'Coupon discount: ₹500';
-    console.log('Success');
-  } else {
-    if (x === '') {
-      document.getElementById('jee-neet-message').innerHTML =
-        'Please Enter Code!!!';
-    } else {
-      document.getElementById('jee-neet-online-price').innerHTML = '18,500';
-      document.getElementById('jee-neet-offline-price').innerHTML = '20,500';
-      document.getElementById('jee-neet-message').innerHTML =
-        'Invalid Coupon Code!!!';
-      document.getElementById('jee-neet-success-message').innerHTML = '';
-    }
-  }
 });
 
 // ******************************************************************PSYCHOLOGY*****************************************************************************
 
 document.addEventListener('DOMContentLoaded', function () {
-  var psychology_online = document.getElementById('psychology-online');
-  var psychology_offline = document.getElementById('psychology-offline');
-  var psychology_online_price = document.getElementById(
-    'psychology-online-price'
+  var live_psychology_online = document.getElementById(
+    'live-psychology-online'
   );
-  var psychology_offline_price = document.getElementById(
-    'psychology-offline-price'
+  var live_psychology_offline = document.getElementById(
+    'live-psychology-offline'
   );
-  var psychology_checkbox = document.getElementById('psychology-checkbox');
+  var live_psychology_online_price = document.getElementById(
+    'live-psychology-online-price'
+  );
+  var live_psychology_offline_price = document.getElementById(
+    'live-psychology-offline-price'
+  );
+  var live_psychology_checkbox = document.getElementById(
+    'live-psychology-checkbox'
+  );
 
-  psychology_online_price.style.display = 'block';
-  psychology_offline_price.style.display = 'none';
-  psychology_offline.style.opacity = '0.6';
+  live_psychology_online_price.style.display = 'block';
+  live_psychology_offline_price.style.display = 'none';
+  live_psychology_offline.style.opacity = '0.6';
 
-  psychology_checkbox.addEventListener('change', function () {
-    if (psychology_checkbox.checked) {
+  live_psychology_checkbox.addEventListener('change', function () {
+    if (live_psychology_checkbox.checked) {
       console.log('Checked');
-      psychology_offline.style.opacity = '1';
-      psychology_online.style.opacity = '0.6';
-      psychology_offline_price.style.display = 'block';
-      psychology_online_price.style.display = 'none';
+      live_psychology_offline.style.opacity = '1';
+      live_psychology_online.style.opacity = '0.6';
+      live_psychology_offline_price.style.display = 'block';
+      live_psychology_online_price.style.display = 'none';
     } else {
       console.log('Not checked');
-      psychology_online.style.opacity = '1';
-      psychology_offline.style.opacity = '0.6';
-      psychology_online_price.style.display = 'block';
-      psychology_offline_price.style.display = 'none';
+      live_psychology_online.style.opacity = '1';
+      live_psychology_offline.style.opacity = '0.6';
+      live_psychology_online_price.style.display = 'block';
+      live_psychology_offline_price.style.display = 'none';
     }
   });
-});
-document.getElementById('psychology-getCode').addEventListener('click', () => {
-  var x = document.getElementById('psychology-code').value;
-  console.log(x);
-  if (x === 'Tarun2021') {
-    document.getElementById('psychology-online-price').innerHTML = '18,000';
-    document.getElementById('psychology-offline-price').innerHTML = '20,000';
-    document.getElementById('psychology-success-message').innerHTML =
-      'Coupon code applied successfully.';
-    document.getElementById('psychology-message').innerHTML =
-      'Coupon discount: ₹500';
-    console.log('Success');
-  } else {
-    if (x === '') {
-      document.getElementById('psychology-message').innerHTML =
-        'Please Enter Code!!!';
-    } else {
-      document.getElementById('psychology-online-price').innerHTML = '18,500';
-      document.getElementById('psychology-offline-price').innerHTML = '20,500';
-      document.getElementById('psychology-message').innerHTML =
-        'Invalid Coupon Code!!!';
-      document.getElementById('psychology-success-message').innerHTML = '';
-    }
-  }
 });
