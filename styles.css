@@ -371,8 +371,7 @@ ul > a:hover {
 }
 .result-screen {
   text-align: center;
-  background-image: url(images/result.jpg);
-  background-size: cover;
+  background-color: #caecee;
   height: auto;
 }
 .result-heading {
@@ -1114,8 +1113,7 @@ input:checked + .slider:before {
   }
   .result-screen {
     text-align: center;
-    background-image: url(images/result.jpg);
-    background-size: cover;
+    background-color: #caecee;
     height: auto;
   }
   .result-heading {
