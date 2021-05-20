@@ -279,7 +279,7 @@ ul > a:hover {
 .list-item {
   font-size: large;
   font-weight: 600;
-  color: #df622c;
+  color: #3e2e77;
 }
 .option {
   display: flex;
@@ -1022,7 +1022,7 @@ input:checked + .slider:before {
   .list-item {
     font-size: large;
     font-weight: 600;
-    color: #df622c;
+    color: #3e2e77;
   }
   .option {
     display: flex;

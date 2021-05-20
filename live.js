@@ -448,7 +448,9 @@ document.addEventListener('DOMContentLoaded', function () {
   var live_jee_neet_offline_price = document.getElementById(
     'live-jee-neet-offline-price'
   );
-  var live_jee_neet_checkbox = document.getElementById('jee-neet-checkbox');
+  var live_jee_neet_checkbox = document.getElementById(
+    'live-jee-neet-checkbox'
+  );
 
   live_jee_neet_online_price.style.display = 'block';
   live_jee_neet_offline_price.style.display = 'none';
