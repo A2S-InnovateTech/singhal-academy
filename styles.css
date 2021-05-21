@@ -139,7 +139,7 @@ nav {
   word-wrap: break-word;
   margin-bottom: 50px;
 }
-.about > button {
+.about > a > button {
   background-color: #1cadeb;
   border-radius: 5px;
   color: #fff;
@@ -899,7 +899,7 @@ input:checked + .slider:before {
     word-wrap: break-word;
     margin-bottom: 50px;
   }
-  .about > button {
+  .about > a > button {
     background-color: #1cadeb;
     border-radius: 5px;
     color: #fff;
