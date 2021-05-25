@@ -35,6 +35,35 @@ body {
 nav {
   padding: 0% !important;
 }
+#initiative {
+  background-color: #f1eee5;
+}
+.initiative-text {
+  color: #893667;
+  text-align: left;
+  font-family: 'Bangers', cursive;
+  letter-spacing: 2px;
+  word-wrap: break-word;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 30px;
+  font-size: 20px;
+  padding: 20px auto;
+  padding-bottom: 50px;
+  margin-bottom: 0;
+}
+.initiative-heading {
+  color: #434e3c;
+  text-align: center;
+  font-family: 'Luckiest Guy', cursive;
+  word-spacing: 0.5em;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1;
+  font-size: 60px;
+  padding-top: 50px;
+  padding: 50px auto 30px;
+}
 .navbar-brand-logo {
   width: 63px;
   border-radius: 50%;
