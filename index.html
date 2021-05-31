@@ -94,44 +94,97 @@
         </div>
       </div>
     </section>
-    <!-- <section id="initiative">
+    <section id="initiative">
+      <img
+        class="initiative-header-img"
+        src="images/Vector 1header-bg.svg"
+        alt=""
+      />
+
       <div class="container">
+        <p class="initiative-heading text-center">
+          Free coaching classes by Singhal Academy
+        </p>
         <div class="row">
-          <div class="col-lg-6">
-            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-            <lottie-player
-              src="https://assets10.lottiefiles.com/packages/lf20_8ypuhlx4.json"
-              background="transparent"
-              speed="1"
-              style="width: 100%; height: 100%"
-              loop
-              autoplay
-            ></lottie-player>
+          <div class="col-lg-5 col-md-5">
+            <img
+              class="initiative-img"
+              src="images/initiative-image.png"
+              alt=""
+            />
+
+            <div class="row">
+              <div class="col-lg-6 col-md-6 text-center">
+                <a href="http://bit.ly/singhalacademyfreeclasses"
+                  ><button
+                    class="initiative-btn"
+                    style="background-color: #56aeff"
+                  >
+                    Join Now
+                  </button></a
+                >
+              </div>
+              <div class="col-lg-6 col-md-6 text-center">
+                <a href="contact.html"
+                  ><button
+                    class="initiative-btn"
+                    style="background-color: #343539"
+                  >
+                    Contact Us
+                  </button></a
+                >
+              </div>
+            </div>
           </div>
-          <div class="col-lg-6">
-            <h1 class="initiative-heading">
-              Free Coaching Classes: An Initiative By Singhal Academy
-            </h1>
+          <div class="col-lg-7 col-md-7">
             <p class="initiative-text">
-              The world today is suffering from a great turmoil of Covid-19
-              which is deeply affecting every sector from business to education.
-              Schools, Colleges, and Universities have been closed for the
-              safety of students. Online Education in this crucial time has been
-              very helpful for students all across the world. So, Singhal
-              Academy have also taken the initiative to support those students
-              who have lost their guardians or parents to this deadly Covid-19
-              virus. They help in providing free tuitions to those who are
-              financially unstable and have lost guardian/parents. It is an
-              incredible social step to help students in resuming their
-              education.
+              The world is going through turbulent times and every sector of
+              life is suffering in this Covid situation.<br /><br />
+              Students have been badly affected during these difficult times.
+              Education is suffering. Especially for those students who have
+              lost their parents and sole bread earners. While, the present
+              seems hopeless, we have a bright future to look forward to.<br /><br />
+              We have
+              <strong style="font-weight: bolder !important">
+                an initiative to impart knowledge and give free coaching classes
+                to students who lost their parents/guardian.</strong
+              >
+              We aim to help the future generation of our country not suffer
+              during these hopeless times and support them to pursue education,
+              so in future they can give back to the society.
             </p>
-            <a href="http://bit.ly/singhalacademyfreeclasses" target="_blank"
-              ><button class="registerNow">Register Now</button></a
-            >
+            <div class="row mt-5">
+              <div class="col-lg-6 col-md-6">
+                <div
+                  onmouseover="showCourseNinth()"
+                  onmouseout="showClassNinth()"
+                  class="initiative-card"
+                  id="initiativeCard1"
+                >
+                  <div class="contentBox text-center">
+                    <h3>Class 09 & 10</h3>
+                    <h3 id="changeNinth"></h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <div
+                  onmouseover="showCourseEleventh()"
+                  onmouseout="showClassEleventh()"
+                  class="initiative-card"
+                  id="initiativeCard2"
+                >
+                  <div class="contentBox text-center">
+                    <h3>Class 11 & 12</h3>
+                    <h3 id="changeEleventh"></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <section class="footer-area" id="footer">
       <div class="container">
@@ -196,6 +249,24 @@
       integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
       crossorigin="anonymous"
     ></script>
+    <script>
+      var showCourseEleventh = () => {
+        document.getElementById('changeEleventh').innerHTML =
+          'Physics, Chemistry, Mathematics';
+        document.getElementById('changeEleventh').style.display = 'block';
+      };
+      var showClassEleventh = () => {
+        document.getElementById('changeEleventh').style.display = 'none';
+      };
+      var showCourseNinth = () => {
+        document.getElementById('changeNinth').innerHTML =
+          'Mathematics,<br> Science';
+        document.getElementById('changeNinth').style.display = 'block';
+      };
+      var showClassNinth = () => {
+        document.getElementById('changeNinth').style.display = 'none';
+      };
+    </script>
     <script>
       $(document).ready(() => {
         setTimeout(() => {

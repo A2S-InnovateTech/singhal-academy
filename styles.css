@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Luckiest+Guy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Yanone+Kaffeesatz:wght@300&display=swap');
 .popUpMain {
   position: fixed;
   width: 100%;
@@ -39,46 +40,70 @@ nav {
   padding: 0% !important;
 }
 #initiative {
-  background-color: #f1eee5;
-  text-align: center;
-  height: 100vh;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 50px;
 }
-.initiative-text {
-  color: #893667;
-  text-align: left;
-  font-family: 'Bangers', cursive;
-  letter-spacing: 2px;
-  word-wrap: break-word;
-  font-weight: normal;
-  line-height: 30px;
-  font-size: 20px;
-  padding: 20px auto;
-  padding-bottom: 40px;
-  margin-bottom: 0;
-}
-.initiative-heading {
-  color: #434e3c;
-  text-align: center;
-  font-family: 'Bangers', cursive;
-  word-spacing: 0.5em;
-  font-weight: normal;
-  line-height: 1;
-  font-size: 50px;
-  padding-top: 50px;
-  padding: 50px auto 30px;
-}
-.registerNow {
-  border-radius: 25px;
-  border: none;
-  padding: 7px 15px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: medium;
-  color: rgb(245, 239, 240);
-  background-color: rgb(43, 65, 23);
-  margin: 15px auto;
+.initiative-header-img {
+  width: 100%;
+  object-fit: contain;
   margin-bottom: 50px;
 }
+.initiative-img {
+  width: 100%;
+}
+.initiative-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
+  text-align: justify;
+
+  color: #000000;
+}
+.initiative-btn {
+  border-radius: 25px;
+  border: none;
+  width: 100%;
+  padding: 14px 30px;
+
+  font-size: x-large;
+  color: #fff;
+  margin: 15px auto;
+}
+.red-box {
+  margin: 20px;
+  padding: 10px 20px;
+  background: #e43235;
+  border-radius: 20px;
+}
+.red-box-heading {
+  color: #fff;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 20px;
+}
+.red-box-text {
+  list-style: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+}
+.initiative-heading {
+  font-family: Yanone Kaffeesatz;
+  font-style: normal;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
+
+  color: #000000;
+}
+
 .navbar-brand-logo {
   width: 63px;
   border-radius: 50%;
@@ -844,6 +869,83 @@ input:checked + .slider:before {
   margin-top: 16px;
 }
 
+.initiative-card {
+  position: relative;
+  width: 70%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background: #191919;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.initiative-card::before {
+  content: '';
+  position: absolute;
+  top: -70%;
+  width: 100%;
+  height: 100%;
+  background: #e43235;
+  transform: skewY(345deg);
+  transition: 0.5s;
+}
+
+.initiative-card:hover::before {
+  top: -90%;
+  transform: skewY(360deg);
+}
+
+.initiative-card::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 6em;
+  color: rgba(0, 0, 0, 0.1);
+}
+.initiative-card:hover::after .contentBox {
+  content: 'Hello';
+}
+.initiative-card .contentBox {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.initiative-card .contentBox h3 {
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.initiative-card .contentBox .buy {
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  padding: 10px 30px;
+  margin-top: 15px;
+  color: #000000;
+  text-decoration: none;
+  color: #fff;
+  background: #e43235;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.initiative-card:hover .contentBox .buy {
+  top: 0;
+  opacity: 1;
+}
+
 @media (min-width: 300px) and (max-width: 580px) {
   * {
     scroll-behavior: smooth;
@@ -908,46 +1010,70 @@ input:checked + .slider:before {
     background: #1cadeb;
   }
   #initiative {
-    background-color: #f1eee5;
-    text-align: center;
-    height: auto;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 50px;
   }
-  .initiative-text {
-    color: #893667;
-    text-align: left;
-    font-family: 'Bangers', cursive;
-    letter-spacing: 2px;
-    word-wrap: break-word;
-    font-weight: normal;
-    line-height: 25px;
-    font-size: 16px;
-    padding: 20px auto;
-    padding-bottom: 40px;
-    margin-bottom: 0;
-  }
-  .initiative-heading {
-    color: #434e3c;
-    text-align: center;
-    font-family: 'Bangers', cursive;
-    word-spacing: 0.5em;
-    font-weight: normal;
-    line-height: 1;
-    font-size: 40px;
-    padding-top: 50px;
-    padding: 50px auto 30px;
-  }
-  .registerNow {
-    border-radius: 25px;
-    border: none;
-    padding: 7px 15px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: medium;
-    color: rgb(245, 239, 240);
-    background-color: rgb(43, 65, 23);
-    margin: 15px auto;
+  .initiative-header-img {
+    width: 100%;
+    object-fit: contain;
     margin-bottom: 50px;
   }
+  .initiative-img {
+    width: 100%;
+  }
+  .initiative-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 25px;
+    text-align: justify;
+
+    color: #000000;
+  }
+  .initiative-btn {
+    border-radius: 25px;
+    border: none;
+    width: 60%;
+    padding: 10px 22px;
+    font-size: large;
+    color: #fff;
+    margin: 15px auto;
+  }
+  .red-box {
+    margin: 20px;
+    padding: 10px 20px;
+    background: #e43235;
+    border-radius: 20px;
+  }
+  .red-box-heading {
+    color: #fff;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .red-box-text {
+    list-style: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff;
+  }
+  .initiative-heading {
+    margin-top: 20px;
+    font-family: Yanone Kaffeesatz;
+    font-style: normal;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 50px;
+
+    color: #000000;
+  }
+
   .home-screen {
     background-image: url(images/hand-painted.jpg);
     background-repeat: no-repeat;
@@ -1735,4 +1861,83 @@ input:checked + .slider:before {
   .slider.round:before {
     border-radius: 50%;
   }
+}
+
+.initiative-card {
+  margin: 20px;
+  position: relative;
+  width: 70%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background: #191919;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.initiative-card::before {
+  content: '';
+  position: absolute;
+  top: -70%;
+  width: 100%;
+  height: 100%;
+  background: #e43235;
+  transform: skewY(345deg);
+  transition: 0.5s;
+}
+
+.initiative-card:hover::before {
+  top: -90%;
+  transform: skewY(360deg);
+}
+
+.initiative-card::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 6em;
+  color: rgba(0, 0, 0, 0.1);
+}
+.initiative-card:hover::after .contentBox {
+  content: 'Hello';
+}
+.initiative-card .contentBox {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.initiative-card .contentBox h3 {
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 10px;
+}
+
+.initiative-card .contentBox .buy {
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  padding: 10px 30px;
+  margin-top: 15px;
+  color: #000000;
+  text-decoration: none;
+  color: #fff;
+  background: #e43235;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.initiative-card:hover .contentBox .buy {
+  top: 0;
+  opacity: 1;
 }
