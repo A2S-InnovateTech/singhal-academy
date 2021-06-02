@@ -945,7 +945,63 @@ input:checked + .slider:before {
   top: 0;
   opacity: 1;
 }
+.offset1 {
+  box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+}
+.offset1:hover,
+.offset1:focus {
+  box-shadow: -0.3em -0.3em 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+}
+.offset1 {
+  --color: #19bc8b;
+  --hover: #1973bc;
+}
+.newBtnJoin > button {
+  color: #fff;
+  background-color: #19bc8b;
+  transition: 0.25s;
+  border: 2px solid #fff;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
 
+.newBtnJoin > button:hover,
+button:focus {
+  border: 2px solid #fff !important;
+  border-color: var(--hover);
+  color: #fff;
+}
+
+.offset2 {
+  box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+}
+.offset2:hover,
+.offset2:focus {
+  box-shadow: -0.3em -0.3em 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+}
+.offset2 {
+  --hover: #19bc8b;
+  --color: #1973bc;
+}
+.newBtnContact > button {
+  color: #fff;
+  background-color: #1973bc;
+  transition: 0.25s;
+  border: 2px solid #fff;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+
+.newBtnContact > button:hover,
+button:focus {
+  border: 2px solid #fff !important;
+  border-color: var(--hover);
+  color: #fff;
+}
 @media (min-width: 300px) and (max-width: 580px) {
   * {
     scroll-behavior: smooth;
@@ -1769,6 +1825,137 @@ input:checked + .slider:before {
   .slider.round:before {
     border-radius: 50%;
   }
+
+  .initiative-card {
+    margin: 10px;
+    position: relative;
+    width: 60%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background: #191919;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .initiative-card::before {
+    content: '';
+    position: absolute;
+    top: -70%;
+    width: 100%;
+    height: 100%;
+    background: #e43235;
+    transform: skewY(345deg);
+    transition: 0.5s;
+  }
+
+  .initiative-card:hover::before {
+    top: -90%;
+    transform: skewY(360deg);
+  }
+
+  .initiative-card::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 6em;
+    color: rgba(0, 0, 0, 0.1);
+  }
+  .initiative-card .contentBox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+  }
+
+  .initiative-card .contentBox h3 {
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .offset1 {
+    box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+  }
+  .offset1:hover,
+  .offset1:focus {
+    box-shadow: -0.3em -0.3em 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+  }
+  .offset1 {
+    --color: #19bc8b;
+    --hover: #1973bc;
+  }
+  .newBtnJoin > button {
+    color: #fff;
+    background-color: #19bc8b;
+    transition: 0.25s;
+    border: 2px solid #fff;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 0.8em 1.5em;
+  }
+
+  .newBtnJoin > button:hover,
+  button:focus {
+    border: 2px solid #fff !important;
+    border-color: var(--hover);
+    color: #fff;
+  }
+
+  .offset2 {
+    box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+  }
+  .offset2:hover,
+  .offset2:focus {
+    box-shadow: -0.3em -0.3em 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+  }
+  .offset2 {
+    --hover: #19bc8b;
+    --color: #1973bc;
+  }
+  .newBtnContact > button {
+    color: #fff;
+    background-color: #1973bc;
+    transition: 0.25s;
+    border: 2px solid #fff;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 0.8em 1.5em;
+    margin-bottom: 30px;
+  }
+
+  .newBtnContact > button:hover,
+  button:focus {
+    border: 2px solid #fff !important;
+    border-color: var(--hover);
+    color: #fff;
+  }
+  .float {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 25px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+  }
+
+  .my-float {
+    margin: auto;
+  }
 }
 @media (min-width: 765px) and (max-width: 995px) {
   .card-price-toggle {
@@ -1840,57 +2027,4 @@ input:checked + .slider:before {
   .slider.round:before {
     border-radius: 50%;
   }
-}
-
-.initiative-card {
-  margin: 15px;
-  position: relative;
-  width: 70%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  background: #191919;
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.initiative-card::before {
-  content: '';
-  position: absolute;
-  top: -70%;
-  width: 100%;
-  height: 100%;
-  background: #e43235;
-  transform: skewY(345deg);
-  transition: 0.5s;
-}
-
-.initiative-card:hover::before {
-  top: -90%;
-  transform: skewY(360deg);
-}
-
-.initiative-card::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  font-weight: 600;
-  font-size: 6em;
-  color: rgba(0, 0, 0, 0.1);
-}
-.initiative-card .contentBox {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  z-index: 2;
-}
-
-.initiative-card .contentBox h3 {
-  font-size: 16px;
-  color: white;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1px;
 }
